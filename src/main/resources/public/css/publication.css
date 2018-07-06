@@ -1,0 +1,21 @@
+.content{
+    width:1000px;
+    margin:3px  auto;
+
+}
+.content li{
+    margin-bottom:20px;
+}
+.author{
+
+}
+.title{
+    text-decoration: underline;
+}
+.journal{
+    font-weight:bold;
+
+}
+.time{
+
+}

@@ -1,0 +1,22 @@
+.full{
+    width:1000px;
+    margin:0 auto;
+}
+
+.full .left{
+    display: inline-block;
+    min-height:500px;
+    width:400px;
+    padding:0 20px 0 0 ;
+
+}
+.full .right{
+    display: inline-block;
+    min-height:100px;
+    width:600px;
+
+}
+#map{
+    width:570px;
+    height:500px;
+}

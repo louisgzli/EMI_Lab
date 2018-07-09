@@ -5,6 +5,7 @@
     <title>EMI Group</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/news.css">
     <script defer src="js/fontawesome-all.js"></script>
     <script defer src="js/fa-v4-shims.js"></script>
 </head>
@@ -16,10 +17,11 @@
         <div class="col-md-1 logo">
             <img src="img/sustech%20logo2.png">
         </div>
-        <div class="col-md-3" >
+        <div class="col-md-3">
             <h1 style="color:darkred"><b>SUSTech</b></h1>
             <h3>Evolving Intelligence Lab</h3>
         </div>
+
 
         <div class="center   col-md-8">
             <ul class="navi">
@@ -36,8 +38,10 @@
 </div>
 <div class="distance"></div>
 <!--**************************************头部****************************************************************-->
-
-
+<div class="news">
+    <ul id="listnews">
+    </ul>
+</div>
 
 
 <!--*****************************************页底****************************************************************-->
@@ -49,5 +53,37 @@
 </div>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+    $.ajax(
+        {
+            type: "post",
+            url: "addnews/findall",
+            async: true,
+            dataType: "json",
+            success: function (data) {
+                console.log("find news success");
+                for (i = 0; i < data.length; i++) {
+                    var ul = $("#listnews");
+                    ul.append("<li class=\"jumpnews\" id=" + data[i].id + "><a href=\"#\">" +"<h3>"+data[i].title+"</h3>"  + data[i].abs + "</a></li>")
+                }
+
+            },
+            error: function (data) {
+                alert("error,please try again");
+
+            }
+        }
+    )
+</script>
+
+<script>
+    $(document).on("click", ".jumpnews", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        window.location.href="shownews.html?id="+id;  // 地址会改变参数也会被传递但是不会打开新窗口
+    })
+</script>
+
 </body>
 </html>

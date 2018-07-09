@@ -100,12 +100,12 @@
                     var year=data[i].date.substring(0,4);
 
 
-                    $("#"+year).append( "<li></li><span class=\"author\">"+data[i].author+"</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">In："+data[i].journal+"</span><span class=\"time\">"+data[i].place+data[i].date+"</span></li>")
+                    $("#"+year).append( "<li><span class=\"author\">"+data[i].author+"</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">In："+data[i].journal+"</span><span class=\"time\">"+data[i].place+data[i].date+"</span></li>")
 
 
 
                 }
-                console.log($("#2018").html())
+
             },
             error: function (data) {
                 alert("error,please try again");

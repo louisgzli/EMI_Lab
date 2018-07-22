@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/addpub.css">
     <script defer src="js/fontawesome-all.js"></script>
     <script defer src="js/fa-v4-shims.js"></script>
-    <script src="ckeditor/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
 
 </head>
 
@@ -27,18 +27,25 @@
     </div>
         <textarea name="text" id="editor1">              </textarea>
     <script>
-        CKEDITOR.replace( 'editor1',{
-            uiColor: '#ffccdd',
-            language:"zh-cn",
+        ClassicEditor
+            .create(document.querySelector("#editor1"), {
+                height:1000,
+                ckfinder: {
+                    uploadUrl: "/addimage/uploadImage.do"
+                }
+            })
+            .then(editor => {
+            myEditor = editor;
+        })
+        .catch(error => {
+            console.error(error);
         });
-
     </script>
     </p>
     <p>
         <input type="submit">
     </p>
 </form></form>
-
 
 
 

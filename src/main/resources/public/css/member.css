@@ -2,6 +2,7 @@
     width:1000px;
     margin:0 auto;
     overflow: hidden;
+
 }
 h3{
     color:darkred;
@@ -9,26 +10,33 @@ h3{
 .faculty,.pd,.ra,.ms,gr {
     min-height: 200px;
     margin:30px 0 0 0;
+    text-overflow:ellipsis;
+    overflow: hidden;
 
 }
-.faculty .pic{
-
+.faculty img{
+    width:160px;
+    height:200px;
 }
 .faculty .description{
 
     padding:0 0 0 40px;
 }
-.faculty img{
-    width:180px;
-    height:192px;
-    margin:auto;
+.description{
+    width:490px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+
 }
+
 .pd .post,.ra .post,.ms .post{
     width:500px;
 }
 .pd .post img,.ra .post img,.ms .post img{
     width:100px;
-    height:110px;
+    height:133px;
 }
 .pd .post .pic,.ra .post .pic,.ms .post .pic{
     width:100px;

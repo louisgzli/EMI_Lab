@@ -15,27 +15,55 @@
 </head>
 <body>
 <div class="top">Add CV</div>
-<form method="post" action="addnews/addnews">
+<form method="post" action="addcv/addcv" enctype="multipart/form-data">
 
     <div class="form-group">
-        <label class="control-label">Title(please use comma to seperate different people)</label>
-        <input class="form-control " type="text" id="title" name="title" placeholder="please type title">
+        <label class="control-label">Name</label>
+        <input class="form-control " type="text" id="name" name="name" placeholder="please type name">
     </div>
-    <div class="form-group">
-        <label class="control-label">Abstract(摘要)</label>
-        <input  class="form-control " type="text" id="abs" name="abs" placeholder="please  type Title">
 
-    </div>
-    <style>
+    <li class="divider"></li>
 
-
-    </style>
-
-    <input id="img_input" type="file" accept="image/*"/>
+    <label class="control-label">Image(please use 4:3(height:width) you can mail to:blissolee@163.com to clip a standard photo)</label>
+    <input id="img_input" type="file" name="imgfile">
     <label for="img_input"></label>
     <div class="preview_box"></div>
 
 
+    <div class="form-group">
+        <label class="control-label"></label>
+       <select class="form-control" name="position" >
+           <option>Faculty</option>
+           <option>Post Doc.</option>
+           <option>Phd</option>
+           <option>Master</option>
+           <option>Under Granduate</option>
+
+       </select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Interest</label>
+        <input class="form-control " type="text" id="interest" name="interest" placeholder="please type interest">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Email</label>
+        <input class="form-control " type="text" id="email" name="email" placeholder="please type title">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Office</label>
+       <select class="form-control" name="office">
+           <option>EMI Lab </option>
+       </select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Awards&Honor</label>
+        <input class="form-control " type="text" id="award" name="award" placeholder="please type awards">
+    </div>
+    <div class="form-group">
+        <label for="describe">Intrduce yourself:</label>
+        <textarea type=" text" class="form-control" id="describe" name="describe" placeholder="please input your information" style="height:100px"></textarea>
+    </div>
+    <input type="submit" class="btn-default">
 
 </form>
 <!--*****************************************页底****************************************************************-->

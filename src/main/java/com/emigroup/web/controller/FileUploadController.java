@@ -23,4 +23,6 @@ public class FileUploadController {
         return attachmentService.ckEditorUploadImage(file, request);
     }
 
+
+
 }

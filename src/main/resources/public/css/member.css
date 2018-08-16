@@ -14,7 +14,7 @@ h3{
     overflow: hidden;
 
 }
-.faculty img{
+.faculty img,.pd .post img{
     width:160px;
     height:200px;
 }
@@ -31,13 +31,14 @@ h3{
 
 }
 
-.pd .post,.ra .post,.ms .post{
+.ra .post,.ms .post{
     width:500px;
 }
-.pd .post img,.ra .post img,.ms .post img{
+.ra .post img,.ms .post img{
     width:100px;
     height:133px;
+    overflow:hidden;
 }
-.pd .post .pic,.ra .post .pic,.ms .post .pic{
+.ra .post .pic,.ms .post .pic{
     width:100px;
 }

@@ -10,7 +10,7 @@
     <name>web</name>
     <description>web project for Spring Boot</description>
 
-    <!-- Spring Boot 启动父依赖 -->
+    <!-- Spring Boot 启动父依赖 定义版本控制 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

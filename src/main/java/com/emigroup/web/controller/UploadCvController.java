@@ -1,6 +1,7 @@
 package com.emigroup.web.controller;
 
 import com.emigroup.web.service.CvService;
+import com.emigroup.web.vo.Cv;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,9 +11,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
-@RequestMapping("/addcv")
+@RequestMapping("/cv")
 @Controller
 public class UploadCvController {
     @Resource
@@ -31,6 +33,13 @@ public class UploadCvController {
             cvService.insert(file,name,position,describe,email,interest,office,award,request);
 
     return "success";
+    }
+
+
+    @ResponseBody
+    @RequestMapping(value={"/getcv"},method=RequestMethod.POST)
+    public List<Cv> getcv(){
+        return cvService.findAll();
     }
 
 

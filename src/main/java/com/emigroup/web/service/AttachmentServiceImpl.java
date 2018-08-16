@@ -1,5 +1,7 @@
 package com.emigroup.web.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -11,8 +13,10 @@ import java.util.Map;
 
 @Service("attachmentService")
 public class AttachmentServiceImpl {
+    @Autowired
+    private Environment env;
 
-    private static final String CK_IMAGE_PATH = File.separator + "uploadImage";
+    public static String newsImage = "newsImage";
 
     public Map<String, String> ckEditorUploadImage(MultipartFile file, HttpServletRequest request) {
         if(file==null || "".equals(file.getOriginalFilename().trim())) {
@@ -22,14 +26,15 @@ public class AttachmentServiceImpl {
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
         // get project path
-        String projectRealPath = request.getSession().getServletContext().getRealPath("");
+        String projectRealPath = env.getProperty("upload.path");
         // get the real path to store received images
-        String realPath = projectRealPath + CK_IMAGE_PATH;
+        //存放图片的本地文件夹
+        String realPath = projectRealPath+File.separator+newsImage;
         File imageDir = new File(realPath);
-        if(!imageDir.exists()) {
+        if(!imageDir.exists()) {//文件夹
             imageDir.mkdirs();
         }
-
+        //上传的本地路径
         String localFilePath = realPath + File.separator + localFileName;
         try {
             file.transferTo(new File(localFilePath));
@@ -40,12 +45,13 @@ public class AttachmentServiceImpl {
             e.printStackTrace();
             // log here
         }
-        String imageContextPath = request.getContextPath() + "/uploadImage" + "/" + localFileName;
+        //上传的网络路径(配置了替换)
+        String imageContextPath ="/images/" +newsImage+File.separator+ localFileName;
         // log here +
         System.out.println("received file original name: " + originalName);
         System.out.println("stored local file name: " + localFileName);
-        System.out.println("file stored path: " + localFilePath);
-        System.out.println("returned url: " + imageContextPath);
+        System.out.println("f本地路径: " + localFilePath);
+        System.out.println("网络路径: " + imageContextPath);
         // log here -
         return generateResult(true, imageContextPath);
     }

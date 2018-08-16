@@ -1,7 +1,12 @@
 .content{
     width:1000px;
     margin:3px  auto;
+    
 
+}
+a{
+    color: #000;
+    text-decoration:none;
 }
 .content li{
     margin-bottom:20px;

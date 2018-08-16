@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="top">Add CV</div>
-<form method="post" action="addcv/addcv" enctype="multipart/form-data">
+<form method="post" action="cv/addcv" enctype="multipart/form-data">
 
     <div class="form-group">
         <label class="control-label">Name</label>
@@ -33,11 +33,12 @@
     <div class="form-group">
         <label class="control-label"></label>
        <select class="form-control" name="position" >
-           <option>Faculty</option>
-           <option>Post Doc.</option>
-           <option>Phd</option>
-           <option>Master</option>
-           <option>Under Granduate</option>
+           <option value="0">Faculty</option>
+           <option value="1">Post Doc.</option>
+           <!--<option value="2">Phd</option>-->
+           <option value="3">Research Assistant</option>
+           <option value="4">Master</option>
+           <!--<option value="5">Gradute</option>-->
 
        </select>
     </div>
@@ -78,7 +79,7 @@
 <script>
     $("#img_input").on("change", function(e){
 
-        var file = e.target.files[0]; //获取图片资源
+        var file = e.target.files[0]; //获取一张图片资源
 
         // 只选择图片文件
 //        if (!file.type.match('image.*')) {

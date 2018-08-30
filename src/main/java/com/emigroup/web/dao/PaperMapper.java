@@ -10,7 +10,8 @@ public interface PaperMapper { //mapper 是接口形式
     @Select("SELECT * FROM PAPER")
     List<Paper> findAll();
 
-
+    @Select("SELECT * FROM PAPER WHERE ID=#{ID}")
+    Paper findById(int id);
 
 
     @Delete("delete from paper where id=#{id}")
@@ -22,9 +23,10 @@ public interface PaperMapper { //mapper 是接口形式
                @Param("place")String place,@Param("type") String type);
 
 
-    @Update("update Paper where id=#{id} set title=#{title}," +
+    @Update("update Paper  set title=#{title}," +
             "author=#{author},journal=#{journal},date=#{date}," +
-            "place=#{place},type=#{type}")
+            "place=#{place},type=#{type}" +
+            " where id=#{id}")
     int update(@Param("id") int id,@Param("title") String title, @Param("author") String author,
                @Param("journal") String journal,@Param("date") String date,
                @Param("place")String place,@Param("type") String type);

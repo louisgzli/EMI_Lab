@@ -38,12 +38,24 @@ public class PaperService {
         List<Paper> paperList = paperMapper.findAll();
         return paperList;
     }
+    public Paper findById(int id){
+        return paperMapper.findById(id);
+    }
 
     /**
      * 增加paper
      * @return
      */
-    public int andPaper(Paper paper){
+    public int addPaper(Paper paper){
         return paperMapper.insert(paper.getTitle(), paper.getAuthor(), paper.getJournal(), paper.getDate(), paper.getPlace(), paper.getType());
     }
+
+    public int update(Paper paper){
+        return paperMapper.update(paper.getId(),paper.getTitle(),paper.getAuthor(),paper.getJournal(),paper.getDate(),paper.getPlace(),paper.getType());
+    }
+
+    public int deleteById(int id){
+        return paperMapper.deleteById(id);
+    }
+
 }

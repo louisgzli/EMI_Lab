@@ -42,5 +42,25 @@ public class UploadCvController {
         return cvService.findAll();
     }
 
+    @ResponseBody
+    @RequestMapping(value={"/getbyid"},method=RequestMethod.POST)
+    public Cv getCvById(int id){
+        return cvService.findById(id);
+    }
+    @ResponseBody
+    @RequestMapping(value={"/updatecv"},method=RequestMethod.POST)
+    public String updateNews(Cv cv){
+        cvService.update(cv);
+        return "success";
+
+
+    }
+    @ResponseBody
+    @RequestMapping(value={"/deletepaper"},method=RequestMethod.POST)
+    public String deleteById(int id){
+        cvService.deleteById(id);
+        return "success";
+    }
+
 
 }

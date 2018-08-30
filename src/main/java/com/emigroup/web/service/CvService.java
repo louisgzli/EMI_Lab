@@ -77,8 +77,8 @@ public class CvService {
     }
 
 
-    public int update(int id,String username,String position ,String userdes,String imgpath,String email,String interest,String office,String award ){
-        return cvMapper.update(id, username, position, userdes, imgpath, email, interest, office, award);
+    public int update(Cv cv){
+        return cvMapper.update(cv.getId(), cv.getUsername(),cv.getPosition(),cv.getUserdes(),cv.getImgPath(),cv.getEmail(),cv.getInterest(),cv.getOffice(),cv.getAward());
 
     }
 }

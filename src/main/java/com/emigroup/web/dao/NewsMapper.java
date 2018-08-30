@@ -20,8 +20,9 @@ public interface NewsMapper {
     @Delete("delete from news where id=#{id}")
     int deleteById(int id);
 
-    @Update("update news where id=#{id} set title=#{title}," +
-            "abs=#{abs},text=#{text}")
+    @Update("update news  set title=#{title}," +
+            "abs=#{abs},text=#{text}" +
+            " where id=#{id}")
     int update(@Param("id") int id,@Param("title") String title, @Param("abs") String abs,
                @Param("text") String text);
 

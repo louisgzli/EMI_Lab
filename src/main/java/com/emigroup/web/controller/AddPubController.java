@@ -22,7 +22,7 @@ public class AddPubController {
     @ResponseBody
     @RequestMapping(value = {"/addpub"}, method = RequestMethod.POST)
     public String addpub(Model model, Paper paper) {
-        paperService.andPaper(paper);
+        paperService.addPaper(paper);
         System.out.println(paper);
 
         return "{\"hello\":true}";
@@ -44,6 +44,27 @@ public class AddPubController {
     @RequestMapping(value={"/findpaper"},method=RequestMethod.POST)
     public List<Paper> findPaper(Model model){
         return paperService.findPaper();
+    }
+
+    @ResponseBody
+    @RequestMapping(value={"/findbyid"},method=RequestMethod.POST)
+    public Paper findById(int id){
+        return paperService.findById(id);
+
+    }
+    @ResponseBody
+    @RequestMapping(value={"/updatepaper"},method=RequestMethod.POST)
+    public String updateNews(Paper paper){
+        paperService.update(paper);
+        return "success";
+
+
+    }
+    @ResponseBody
+    @RequestMapping(value={"/deletepaper"},method=RequestMethod.POST)
+    public String deleteById(int id){
+        paperService.deleteById(id);
+        return "success";
     }
 
 

@@ -6,7 +6,7 @@ public class Cv {
     private int id;
     private String username;
     private String position;
-    private String imgPath;
+    private String imgpath;
 
     private String email;
     private String userdes;
@@ -51,11 +51,11 @@ public class Cv {
     }
 
     public String getImgPath() {
-        return imgPath;
+        return imgpath;
     }
 
     public void setImgPath(String imgPath) {
-        this.imgPath = imgPath;
+        this.imgpath = imgPath;
     }
 
 

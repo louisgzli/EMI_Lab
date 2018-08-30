@@ -36,6 +36,20 @@ public class AddNewsController {
         return newsService.findById(id);
 
     }
+    @ResponseBody
+    @RequestMapping(value={"/updatenews"},method=RequestMethod.POST)
+    public String updateNews(News news){
+        newsService.update(news);
+        return "success";
+
+
+    }
+    @ResponseBody
+    @RequestMapping(value={"/deletenews"},method=RequestMethod.POST)
+    public String deleteById(int id){
+        newsService.deleteById(id);
+        return "success";
+    }
 
 
 }

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMI Group</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="js/fontawesome-all.js"></script>
+    <script defer src="js/fa-v4-shims.js"></script>
+</head>
+<body>
+
+<!--**************************************头部****************************************************************-->
+<div class="header container">
+    <div class="row">
+        <div class="col-md-1 logo">
+            <img src="img/sustech%20logo2.png">
+        </div>
+        <div class="col-md-3" >
+            <h1 style="color:darkred"><b>SUSTech</b></h1>
+            <h3>Evolving Intelligence Lab</h3>
+        </div>
+
+        <div class="center   col-md-8">
+            <ul class="navi">
+                <li><a href="emi.html">Home</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="news.html">News&Info</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="distance"></div>
+<!--**************************************头部****************************************************************-->
+<div class="full">
+    <H2><b>CONTACT</b></H2>
+    <div class="container">
+        <div class="left">
+            <h4>Evolving Maching Intelligence Lab</h4>
+            <i class="fas fa-school"></i>
+            <h4 style="display:inline">SUSTech</h4>
+            <h5>Address:Nanshan i-Park building A7, Xueyuan Road, Nanshan, Shenzhen, China</h5>
+            <h5>Email:ranchengcn@gmail.com</h5>
+            <h5>Tel:0557-2341234</h5>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Your Name：</label>
+                    <input type="text" class="form-control" id="name" placeholder="please input your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email：</label>
+                    <input type="email" class="form-control" id="email" placeholder="please input your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea type="text" class="form-control" id="message" placeholder="please input your message" style="height:100px"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger">send</button>
+            </form>
+        </div>
+
+        <div class="right" id="map">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--*****************************************页底****************************************************************-->
+<div class="footpage">
+    <div class="description">
+        <h2>SUSTech EMI Group</h2>
+        <p>@2018 all rights reserved</p>
+    </div>
+</div>
+
+
+<!--******************************************添加google地图************************************************-->
+<script>
+    function initMap() {
+        var uluru = {lat:22.593890, lng: 113.998895};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA36KIhK5OU6EEDk9mR3EzeB5h1EMmRa2A&callback=initMap">
+</script>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>hangge.comm</title>
+
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        #container{
+            width:380px;
+            margin:20px auto;
+            padding:15px;
+            background-color:#eee;
+            border-radius: 15px;
+        }
+        /** 新增按钮 **/
+        #addVar{
+            margin:0 0 0 52px;
+            padding:5px;
+            display:inline-block;
+            background-color:#3A9668;
+            color:#f1f1f1;
+            border:1px solid #005;
+            border-radius: 4px;
+        }
+        /** 删除按钮 **/
+        .removeVar{
+            margin:auto;
+            padding:5px;
+            display:inline-block;
+            background-color:#B02109;
+            color:#f1f1f1;
+            border:1px solid #005;
+            border-radius: 4px;
+        }
+
+        #addVar:hover, .removeVar:hover{
+            cursor: pointer;
+        }
+
+        .alignRight{
+            text-align: right;
+        }
+
+        input, textarea{
+            padding:5px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <form id="myForm" method="post" target="nm_iframe">
+        <p>
+            <label for="var1">项目 1: </label>
+            <input type="text" name="var1" id="var1">
+            <span class="removeVar">删除</span>
+        </p>
+        <p>
+            <label for="var2">项目 2: </label>
+            <input type="text" name="var2" id="var2">
+            <span class="removeVar">删除</span>
+        </p>
+        <p><span id="addVar">新增一项</span></p>
+        <p class="alignRight"><input type="submit" value="提交"></p>
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+</div>
+</body>
+<script>
+    //初始参数个数
+    var varCount = 2;
+
+    $(function () {
+        //新增按钮点击
+        $('#addVar').on('click', function(){
+            varCount++;
+            $node = '<p><label for="var'+varCount+'">项目 '+varCount+': </label>'
+                + '<input type="text" name="var'+varCount+'" id="var'+varCount+'">'
+                + '<span class="removeVar">删除</span></p>';
+            //新表单项添加到“新增”按钮前面
+            $(this).parent().before($node);
+        });
+
+        //删除按钮点击
+        $('form').on('click', '.removeVar', function(){
+            $(this).parent().remove();
+            //varCount--;
+        });
+        $("form").on("click",".alignRight",function () {
+            var awardArray = new Array();
+            $('input[name^="var"]').each(function(){
+                awardArray.push($(this).val());
+            });
+            console.log(awardArray);
+
+            var awards = new Object();
+            awards["awards"] = awardArray;
+
+            console.log(awards);
+            $.post("/cv/jsontest",{
+                awards:awards
+            },function () {
+                
+            })
+
+
+        })
+    });
+</script>
+</html>

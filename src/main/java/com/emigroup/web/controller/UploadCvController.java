@@ -1,12 +1,11 @@
 package com.emigroup.web.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.emigroup.web.service.CvService;
 import com.emigroup.web.vo.Cv;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -60,6 +59,16 @@ public class UploadCvController {
     public String deleteById(int id){
         cvService.deleteById(id);
         return "success";
+    }
+
+    @ResponseBody
+    @RequestMapping(value={"/jsontest"},method=RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    public String testJson(@RequestParam(value="awards",required = true)JSONObject awards){
+        System.out.println(awards);
+
+        return "successful";
+
+
     }
 
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add News</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/addpub.css">
+    <script defer src="js/fontawesome-all.js"></script>
+    <script defer src="js/fa-v4-shims.js"></script>
+    <script src="ckeditor5/ckeditor.js"></script>
+
+
+</head>
+
+<body>
+<div class="top">Add News</div>
+
+<form method="post" action="addnews/addnews">
+
+    <div class="form-group">
+        <label class="control-label">Title(please use comma to seperate different people)</label>
+        <input class="form-control " type="text" id="title" name="title" placeholder="please type title">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Abstract(摘要)</label>
+        <input  class="form-control " type="text" id="abs" name="abs" placeholder="please  type Title">
+    </div>
+        <textarea name="text" id="editor1">              </textarea>
+    <script>
+        ClassicEditor
+            .create(document.querySelector("#editor1"), {
+                height:1000,
+                ckfinder: {
+                    uploadUrl: "/addimage/uploadImage.do"
+                }
+            })
+            .then(editor => {
+            myEditor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    </script>
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+</form></form>
+
+
+
+<!--*****************************************页底****************************************************************-->
+<div class="footpage">
+    <div class="description">
+        <h2>SUSTech EMI Group</h2>
+        <p>@2018 all rights reserved</p>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

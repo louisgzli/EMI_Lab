@@ -4,7 +4,7 @@
     overflow: hidden;
 
 }
-h3{
+.full h3{
     color:darkred;
 }
 .faculty,.pd,.ra,.ms,gr {
@@ -14,11 +14,11 @@ h3{
     overflow: hidden;
 
 }
-.faculty img,.pd .post img{
+.faculty img, .pd img{
     width:160px;
     height:200px;
 }
-.faculty .description{
+.faculty .description,.pd .description{
 
     padding:0 0 0 40px;
 }

@@ -23,8 +23,10 @@
         window.location.href="modifyNews.html?id="+id;
     }
     function btndelete(id){
-        $.post("../addpub/deletenews",function () {
-
+        $.post("../addnews/deletenews",{
+            id:id
+        },function () {
+            window.location.reload()
         }).error(function (xhr) {
             console.log(xhr.status);
         })

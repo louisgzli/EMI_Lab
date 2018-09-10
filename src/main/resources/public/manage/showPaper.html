@@ -24,8 +24,10 @@
         window.location.href="modifyPaper.html?id="+id;
     }
     function btndelete(id){
-        $.post("../addpub/deletepaper",function () {
-
+        $.post("../addpub/deletepaper",{
+            id:id
+        },function () {
+            window.location.reload()
         }).error(function (xhr) {
             console.log(xhr.status);
         })

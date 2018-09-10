@@ -55,7 +55,7 @@ public class UploadCvController {
 
     }
     @ResponseBody
-    @RequestMapping(value={"/deletepaper"},method=RequestMethod.POST)
+    @RequestMapping(value={"/deletecv"},method=RequestMethod.POST)
     public String deleteById(int id){
         cvService.deleteById(id);
         return "success";

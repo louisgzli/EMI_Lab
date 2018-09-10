@@ -23,7 +23,10 @@
         window.location.href="modifyCv.html?id="+id;
     }
     function btndelete(id){
-        $.post("../addpub/deletecv",function () {
+        $.post("../cv/deletecv",{
+            id:id
+        },function (data) {
+            window.location.reload()
 
         }).error(function (xhr) {
             console.log(xhr.status);

@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/addpub")
@@ -33,10 +32,24 @@ public class AddPubController {
     @ResponseBody
     @RequestMapping(value={"/findyear"},method=RequestMethod.POST)
     public List<Integer> findYear(Model model){
+        //自定义Comparator对象，自定义排序
+        Comparator invertDictOrder = new Comparator<Integer>() {//倒序
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                // TODO Auto-generated method stub
+                if((int)o1<(int)o2)
+                    return 1;
+                    //注意！！返回值必须是一对相反数，否则无效。jdk1.7以后就是这样。
+                    //		else return 0; //无效
+                else return -1;
+            }
+        };
+
         System.out.println("findyear started");
         ArrayList<Integer>yearList = new ArrayList<Integer>(paperService.findYear());
+        Collections.sort(yearList,invertDictOrder);
         model.addAttribute("yearList",yearList);
-    System.out.println(yearList);
+        System.out.println(yearList);
         return yearList;
     }
 

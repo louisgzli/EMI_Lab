@@ -57,60 +57,67 @@
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script>
-    $.ajax(
-        {
-            type:"post",
-            url:"addpub/findyear",
-            async: true,
-            dataType:"json",
-            success: function (data) {
-                console.log("find year success");
-                for(i=0;i<data.length;i++){
-                    var div = $("#content");
-                    div.append("<ul id="+data[i]+"></ul>")
+    $(function () {
+        $.ajax(
+            {
+                type:"post",
+                url:"addpub/findyear",
+                async: true,
+                dataType:"json",
+                success: function (data) {
+                    console.log("find year success");
+                    for(i=0;i<data.length;i++){
+                        var div = $("#content");
+                        div.append("<ul id="+data[i]+"></ul>")
+
+                    }
+                },
+                error: function (data) {
+                    alert("error,please try again");
+
+
 
                 }
-            },
-            error: function (data) {
-                alert("error,please try again");
-
-
-
             }
-        }
-    )
+
+
+        )
+        $.ajax(
+            {
+
+                type:"post",
+                url:"addpub/findpaper",
+                async: true,
+                dataType:"json",
+                success: function (data) {
+                    console.log(" findpaper success");
+                    $("div.content ul").each(function(index,item){//为每个ul下面添加年份
+                        var id = $(item).attr("id");
+                        $(item).append("<h3>"+id+"</h3>")
+
+                    })
+                    for(i=0;i<data.length;i++){
+                        var year=data[i].date.substring(0,4);
+
+
+                        $("#"+year).append( "<li><span class=\"author\">"+data[i].author+"</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">In："+data[i].journal+"</span><span class=\"time\">"+data[i].place+data[i].date+"</span></li>")
+
+
+
+                    }
+
+                },
+                error: function (data) {
+                    alert("error,please try again");
+                }
+            }
+        )
+    })
+
 
 </script>
 <script>
-    $.ajax(
-        {
-            type:"post",
-            url:"addpub/findpaper",
-            async: true,
-            dataType:"json",
-            success: function (data) {
-                console.log(" findpaper success");
-                $("div.content ul").each(function(index,item){//为每个ul下面添加年份
-                    var id = $(item).attr("id");
-                    $(item).append("<h3>"+id+"</h3>")
 
-                })
-                for(i=0;i<data.length;i++){
-                    var year=data[i].date.substring(0,4);
-
-
-                    $("#"+year).append( "<li><span class=\"author\">"+data[i].author+"</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">In："+data[i].journal+"</span><span class=\"time\">"+data[i].place+data[i].date+"</span></li>")
-
-
-
-                }
-
-            },
-            error: function (data) {
-                alert("error,please try again");
-            }
-        }
-    )
 </script>
 </body>
 </html>

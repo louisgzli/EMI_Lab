@@ -26,7 +26,9 @@ public class AttachmentServiceImpl {
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
         // get project path
-        String projectRealPath = env.getProperty("upload.path");
+        File resourcefile = new File("src/main/resources/static/");
+        String projectRealPath = resourcefile.getAbsolutePath();
+//        String projectRealPath = env.getProperty("upload.path");
         // get the real path to store received images
         //存放图片的本地文件夹
         String realPath = projectRealPath+File.separator+newsImage;

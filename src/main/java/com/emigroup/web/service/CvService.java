@@ -25,11 +25,16 @@ public class CvService {
     public static String cvImage = "cvImage";
     public String getFilePath(MultipartFile file, HttpServletRequest request){
 
+
         String originalName = file.getOriginalFilename();
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
 
-        String projectRealPath = env.getProperty("upload.path");
+//        String projectRealPath = env.getProperty("upload.path");
+        //获取系统路径
+        File resourcefile = new File("src/main/resources/static/");
+        String projectRealPath = resourcefile.getAbsolutePath();
+
         // get the real path to store received images
         String realPath = projectRealPath +File.separator+cvImage;
         File imageDir = new File(realPath);

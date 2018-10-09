@@ -27,6 +27,7 @@ public class PaperService {
             listYear.add(Integer.parseInt(paperList.get(i).getDate().substring(0, 4)));
         }
         return listYear;
+
     }
 
     /**

@@ -29,6 +29,7 @@ public class UploadCvController {
         System.out.println("interest: = "+interest);
         System.out.println("office: = "+office);
         System.out.println("award: = "+award);
+
             cvService.insert(file,name,position,describe,email,interest,office,award,request);
 
     return "success";

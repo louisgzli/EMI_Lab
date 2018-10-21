@@ -9,6 +9,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 import java.util.Map;
 
 @RequestMapping("/addimage")
@@ -19,9 +21,25 @@ public class FileUploadController {
     AttachmentServiceImpl attachmentService;
     @RequestMapping("/uploadImage.do")
     @ResponseBody
-    public Map<String, String> receiveImage(@RequestPart("upload") MultipartFile file, HttpServletRequest request) {
-        return attachmentService.ckEditorUploadImage(file, request);
-    }
+    public void receiveImage(@RequestPart("upload") MultipartFile file, HttpServletRequest request,HttpServletResponse response) {
+        Map<String,String> map = attachmentService.ckEditorUploadImage(file,request);
+//        return attachmentService.ckEditorUploadImage(file, request);
+        try {
+            PrintWriter out = response.getWriter();
+            String CKEditorFuncNum = request.getParameter("CKEditorFuncNum");
+            String imgUrl=  map.get("url");
+            System.out.println(imgUrl+"上传图片路径");
+            out.println("<script type=\"text/javascript\">");
+            out.println("window.parent.CKEDITOR.tools.callFunction("
+                    + CKEditorFuncNum + ",'" +imgUrl+ "','')");
+            out.println("</script>");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        }
+
+
+
 
 
 

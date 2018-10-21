@@ -6,7 +6,7 @@
     <groupId>com.emigroup</groupId>
     <artifactId>emigroup</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>web</name>
     <description>web project for Spring Boot</description>
 
@@ -69,6 +69,7 @@
 
     </dependencies>
     <build>
+        <finalName>emi</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -76,6 +77,12 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>spring-milestone</id>
+            <url>http://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
 
 
 </project>

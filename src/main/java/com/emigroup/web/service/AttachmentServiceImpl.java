@@ -48,7 +48,7 @@ public class AttachmentServiceImpl {
             // log here
         }
         //上传的网络路径(配置了替换)
-        String imageContextPath ="/images/" +newsImage+File.separator+ localFileName;
+        String imageContextPath ="/images/" +newsImage+"/"+ localFileName;
         // log here +
         System.out.println("received file original name: " + originalName);
         System.out.println("stored local file name: " + localFileName);

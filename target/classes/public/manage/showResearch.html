@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <ul id="listnews" class="news"></ul>
+<ul id="listnews" class="news"></ul>
 
 
 </body>
@@ -23,7 +23,7 @@
         window.location.href="modifyNews.html?id="+id;
     }
     function btndelete(id){
-        $.post("../addnews/deletenews",{
+        $.post("../research/deleteresearch",{
             id:id
         },function () {
             window.location.reload()
@@ -40,7 +40,7 @@
         }
     }
     $(function () {
-        $.post("../addnews/findall", function (data) {
+        $.post("../research/findall", function (data) {
 
             initnews(data)
         }).error(function (xhr) {

@@ -11,6 +11,7 @@ body{
     width:100%;
     height:110px;
     min-width: 1300px;
+    max-height: 110px;
     background-color: #2077a8;
     /*子元素溢出时的处理*/
     overflow:hidden;
@@ -18,6 +19,7 @@ body{
 .header .logo {
     width:100px;
     height:100px;
+    max-height: 100px;
     margin:10px auto;
 }
 .center{
@@ -31,17 +33,19 @@ body{
     positon:relative;
     width:100%;
     height: 50px;
+    max-height: 50px;
     font: 0/50px Georgia;
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
-    margin:30px auto  0;
+    margin:30px auto 0;
+    min-width: 1300px;
     /*指定为auto 是居中对齐*/
 
     border-radius:10px;
 
 }
 .navi a{
-    font-size: 20px;
+    font-size: 125%;
 
     color: #f9f4f4;
     text-decoration:none;

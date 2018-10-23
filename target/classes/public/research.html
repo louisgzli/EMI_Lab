@@ -5,8 +5,7 @@
     <title>EMI Group</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navigation.css">
-    <script defer src="js/fontawesome-all.js"></script>
-    <script defer src="js/fa-v4-shims.js"></script>
+    <link rel="stylesheet" href="css/addresearch.css">
 </head>
 <body>
 
@@ -23,9 +22,9 @@
 
         <div class="center   col-md-7">
             <ul class="navi">
-                <li ><a href="emi.html">Home</a></li>
-                <li ><a href="member.html">Members</a></li>
-                <li ><a style="color:black" href="research.html">Research</a></li>
+                <li><a href="emi.html">Home</a></li>
+                <li><a href="member.html">Members</a></li>
+                <li><a style="color:black" href="research.html">Research</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="news.html">News&Info</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -35,9 +34,14 @@
 
 </div>
 <!--**************************************头部****************************************************************-->
+<div class="distance"></div>
 
+<div class="research">
+    <ul id="listresearch">
 
+    </ul>
 
+</div>
 
 <!--*****************************************页底****************************************************************-->
 <div class="footpage">
@@ -48,5 +52,38 @@
 </div>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $.ajax((
+        {
+            type: "post",
+            url: "research/findall",
+            async: true,
+            dataType: "json",
+            success: function (data) {
+                console.log("find research success");
+                for (i = 0; i < data.length; i++) {
+                    var ul = $("#listresearch");
+                    ul.append("<li><div class=\"preImg\"><img src="+data[i].preImage+"></div>"+
+                    "<div class=\"rightdis\" id="+data[i].id+"><p>"+data[i].abs+"</p></div></li>")
+                }
+
+
+            },
+            error: function (data) {
+                alert("error,please try again");
+
+            }
+        }
+    ))
+</script>
+
+<script>
+    $(document).on("click", ".rightdis", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        window.location.href = "showResearch.html?id=" + id;  // 地址会改变参数也会被传递但是不会打开新窗口
+    })
+</script>
 </body>
+
 </html>

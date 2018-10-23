@@ -7,7 +7,6 @@ public class Cv {
     private String username;
     private String position;
     private String imgpath;
-
     private String email;
     private String userdes;
     private List<Paper> papers;

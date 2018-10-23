@@ -110,7 +110,8 @@
         $("input[name|='award']").val(data.award)
         $("textarea[name|='id']").val(data.id)
         $("textarea[name|='describe']").val(data.describe)
-        $(".preview_box").append("<img class=\"preview\" src="+"\'"+data.imgpath+"\'"+" alt=\"preview\"/>")
+        $(".preview_box").append("<img class=\"preview\" src=\""+data.imgpath+"\" alt= \"preview\"/>")
+        console.log(data.imgpath)
         console.log($(".preview_box").html())
 
 

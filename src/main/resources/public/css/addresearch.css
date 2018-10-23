@@ -1,0 +1,57 @@
+.distance{
+    height:20px;
+}
+.research {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.preview_box img {
+    width: 200px;
+    height:100px;
+    margin: 0;
+}
+.preImg{
+    display: inline-block;
+    /*position: relative;*/
+    float: left;
+    width: 200px;
+    height:100px;
+    max-width: 200px;
+    max-height: 100px;
+
+}
+.research li{
+    display:block;
+}
+.research .preImg img{
+
+    margin:0;
+    width:200px;
+    max-width: 200px;
+    height: 100px;
+    max-height: 100px;
+
+
+}
+.research .rightdis{
+    position: relative;
+
+    display: inline-block;
+    white-space:pre-line;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width:700px;
+    height:100px;
+    max-width: 700px;
+    max-height: 100px;
+    margin-left:10px;
+    /*margin-top: 20px;*/
+    /*padding-top:20px;*/
+}
+.research li{
+    min-width: 1000px;
+    list-style-type: none;
+    max-height: 100px;
+    margin-bottom: 20px;
+}

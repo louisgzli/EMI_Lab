@@ -45,6 +45,7 @@ public class UploadCvController {
     @ResponseBody
     @RequestMapping(value={"/getbyid"},method=RequestMethod.POST)
     public Cv getCvById(int id){
+        System.out.println(cvService.findById(id).getImgPath());
         return cvService.findById(id);
     }
     @ResponseBody
@@ -52,8 +53,6 @@ public class UploadCvController {
     public String updateNews(Cv cv){
         cvService.update(cv);
         return "success";
-
-
     }
     @ResponseBody
     @RequestMapping(value={"/deletecv"},method=RequestMethod.POST)

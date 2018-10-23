@@ -23,6 +23,7 @@ public class AddPubController {
     public String addpub(Model model, Paper paper) {
         paperService.addPaper(paper);
         System.out.println(paper);
+        
 
         return "{\"hello\":true}";
 

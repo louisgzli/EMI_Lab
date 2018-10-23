@@ -21,7 +21,7 @@ public class AddResearch {
     ResearhService researhService;
     @ResponseBody
     @RequestMapping(value={"/addresearch"},method=RequestMethod.POST)
-    public String addcv(@RequestParam("imgfile") MultipartFile file, @RequestParam("title") String title, @RequestParam("abs") String abs,
+    public String addresearch(@RequestParam("imgfile") MultipartFile file, @RequestParam("title") String title, @RequestParam("abs") String abs,
                         @RequestParam("text") String text,HttpServletRequest request){
         System.out.println("tile: = "+title);
         System.out.println("abs: = "+abs);
@@ -35,18 +35,18 @@ public class AddResearch {
 
 
     @ResponseBody
-    @RequestMapping(value={"/getresearch"},method=RequestMethod.POST)
-    public List<Research> getcv(){
+    @RequestMapping(value={"/findAll"},method=RequestMethod.POST)
+    public List<Research> getResearch(){
         return researhService.findAll();
     }
 
     @ResponseBody
     @RequestMapping(value={"/getbyid"},method=RequestMethod.POST)
-    public Research getCvById(int id){
+    public Research getByid(int id){
         return researhService.findById(id);
     }
     @ResponseBody
-    @RequestMapping(value={"/updatecv"},method=RequestMethod.POST)
+    @RequestMapping(value={"/updateresearch"},method=RequestMethod.POST)
     public String updateNews(Research research){
         researhService.update(research);
         return "success";

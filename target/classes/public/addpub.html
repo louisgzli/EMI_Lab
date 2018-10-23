@@ -109,8 +109,8 @@
 
                        alert("success");
                    },
-                   error: function (request) {
-                       alert("Connection error");
+                   error: function (status) {
+                       console.log(status);
                    }
                }
            )

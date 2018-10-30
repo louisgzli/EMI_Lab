@@ -33,6 +33,7 @@ public class NewsService {
     public News findById(int id){
         return newsMapper.findById(id);
     }
+    public News findLatest(){return newsMapper.findLatest();}
 
 
 

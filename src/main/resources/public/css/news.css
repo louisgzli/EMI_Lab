@@ -1,10 +1,14 @@
 .news{
     width:1000px;
     margin:0 auto;
-
+    word-wrap:break-word;
 }
 .news button{
     margin:10px;
 
+}
+pre {
+    white-space: pre-wrap; /*css-3*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
 }
 

@@ -36,3 +36,23 @@
 
     text-decoration: none;
 }
+.more{
+    display: inline-block;
+    color: blue;
+}
+.more:hover{
+    cursor:pointer;
+}
+.newscontent{
+
+    /*white-space:pre-line;*/
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    max-height: 100px;
+
+    padding:0px;
+}
+.newscontent_p:hover{
+    cursor: pointer;
+}

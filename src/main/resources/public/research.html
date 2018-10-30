@@ -24,7 +24,7 @@
             <ul class="navi">
                 <li><a href="emi.html">Home</a></li>
                 <li><a href="member.html">Members</a></li>
-                <li><a style="color:black" href="research.html">Research</a></li>
+                <li><a style="color:black" href="research.html">Project</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="news.html">News&Info</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -38,7 +38,42 @@
 
 <div class="research">
     <ul id="listresearch">
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
 
+        </li>
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
+
+        </li>
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
+
+        </li>
     </ul>
 
 </div>
@@ -63,8 +98,8 @@
                 console.log("find research success");
                 for (i = 0; i < data.length; i++) {
                     var ul = $("#listresearch");
-                    ul.append("<li><div class=\"preImg\"><img src="+data[i].preImage+"></div>"+
-                    "<div class=\"rightdis\" id="+data[i].id+"><p>"+data[i].abs+"</p></div></li>")
+                    ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
+                    "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
                 }
 
 
@@ -78,7 +113,7 @@
 </script>
 
 <script>
-    $(document).on("click", ".rightdis", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+    $(document).on("click", ".more,.preImg", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
 
         var id = $(this).attr("id")
         window.location.href = "showResearch.html?id=" + id;  // 地址会改变参数也会被传递但是不会打开新窗口

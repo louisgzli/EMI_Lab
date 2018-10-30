@@ -4,6 +4,7 @@ import com.emigroup.web.service.NewsService;
 import com.emigroup.web.vo.News;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -49,6 +50,12 @@ public class AddNewsController {
     public String deleteById(int id){
         newsService.deleteById(id);
         return "success";
+    }
+
+    @ResponseBody
+    @RequestMapping(value={"/latestnews"},method=RequestMethod.POST)
+    public News latestNews(){
+        return newsService.findLatest();
     }
 
 

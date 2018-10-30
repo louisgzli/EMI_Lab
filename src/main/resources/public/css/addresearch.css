@@ -1,5 +1,5 @@
 .distance{
-    height:20px;
+    height:50px;
 }
 .research {
     width: 1000px;
@@ -21,6 +21,9 @@
     max-height: 100px;
 
 }
+.preImg:hover{
+    cursor:pointer;
+}
 .research li{
     display:block;
 }
@@ -35,23 +38,34 @@
 
 }
 .research .rightdis{
-    position: relative;
-
+    /*position: relative;*/
     display: inline-block;
-    white-space:pre-line;
+    /*white-space:pre-line;*/
     overflow:hidden;
     text-overflow:ellipsis;
     width:700px;
     height:100px;
     max-width: 700px;
     max-height: 100px;
-    margin-left:10px;
-    /*margin-top: 20px;*/
-    /*padding-top:20px;*/
+    margin-left:30px;
+   padding:0px;
 }
 .research li{
     min-width: 1000px;
     list-style-type: none;
     max-height: 100px;
     margin-bottom: 20px;
+}
+.rightdis h3{
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    margin: 0;
+}
+.more{
+    display: inline-block;
+    color: blue;
+
+}
+.more:hover{
+    cursor:pointer;
 }

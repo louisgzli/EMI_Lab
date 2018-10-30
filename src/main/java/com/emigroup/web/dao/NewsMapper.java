@@ -16,6 +16,8 @@ public interface NewsMapper {
 
     @Select("SELECT * FROM NEWS WHERE ID=#{ID}")
     News findById(int id);
+    @Select("Select * from News where id=(select max(id) from news)")
+    News findLatest();
 
     @Delete("delete from news where id=#{id}")
     int deleteById(int id);

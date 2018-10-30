@@ -26,7 +26,7 @@
             <ul class="navi">
                 <li ><a href="emi.html">Home</a></li>
                 <li ><a style="color:black" href="member.html">Members</a></li>
-                <li><a href="research.html">Research</a></li>
+                <li><a href="research.html">Project</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="news.html">News&Info</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -74,7 +74,14 @@
 
     </div>
 
+    <div class="visarea">
+        <h3>Visitors</h3>
+        <div class="visitor container">
 
+        </div>
+
+
+    </div>
 </div>
 
 
@@ -102,7 +109,7 @@
 
             var desdiv = $("<div></div>")
             desdiv.append("<h4><a href=\"#\">"+data[i].username+"</a></h4>");
-            desdiv.append(" <p>Department of Computer and Science Engineering, SUSTech</p>\n" +
+            desdiv.append(" <p>Department of Computer Science and Engineering, SUSTech</p>\n" +
                 "                    <p>10-603,Innovation Park<br>\n" +
                 "                        1008 Xue Yuan Road, Nanshan Block, Shenzhen, China</p>")
             desdiv.append("<p>Email:"+data[i].email+"</p>")
@@ -150,6 +157,15 @@
 
             }
             else if(data[i].position=="5"){//graduate
+
+            }
+            else if(data[i].position=="6"){
+                imgdiv.addClass("pic")
+                tempdiv.append(imgdiv);
+                desdiv.addClass("description")
+                tempdiv.append(desdiv);
+                tempdiv.addClass("col-md-6 post")
+                $(".visitor").append(tempdiv);
 
             }
 

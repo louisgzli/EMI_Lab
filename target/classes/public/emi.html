@@ -147,12 +147,13 @@
 
     })
 </script>
-</body>
-</html>
 <script>
     $(document).on("click", ".newscontent_p", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
 
         var id = $(this).attr("id")
-        window.location.href = "shownews.html?id=" + id;  // 地址会改变参数也会被传递但是不会打开新窗口
+        window.location.href="shownews.html?id="+id;  // 地址会改变参数也会被传递但是不会打开新窗口
     })
+
 </script>
+</body>
+</html>

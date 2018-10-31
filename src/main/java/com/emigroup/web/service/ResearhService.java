@@ -60,10 +60,10 @@ public class ResearhService {
 
         return imageContextPath;
     }
-    public String insert(MultipartFile file,String title,String abs,String text,HttpServletRequest request){
+    public String insert(MultipartFile file,String title,String abs,String type,String text,HttpServletRequest request){
 
         String preImage = getFilePath(file,request);
-        researchMapper.insert(title,abs,preImage,text);
+        researchMapper.insert(title,abs,type,preImage,text);
         return "success";
     }
 
@@ -73,7 +73,7 @@ public class ResearhService {
     }
 
     public int update(Research research){
-        return researchMapper.update(research.getId(),research.getTitle(),research.getAbs(),research.getPreImage(),research.getText());
+        return researchMapper.update(research.getId(),research.getTitle(),research.getAbs(),research.getType(),research.getPreImage(),research.getText());
     }
     public Research findById(int id){
         return researchMapper.findById( id);

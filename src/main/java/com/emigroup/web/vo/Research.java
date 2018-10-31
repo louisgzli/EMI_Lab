@@ -6,6 +6,15 @@ public class Research {
     private String abs;
     private  String preImage;
     private String text;
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public String getPreImage() {
         return preImage;

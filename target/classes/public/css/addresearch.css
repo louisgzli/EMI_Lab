@@ -69,3 +69,10 @@
 .more:hover{
     cursor:pointer;
 }
+.type{
+    margin:0 auto;
+}
+.type h1{
+
+    text-align:center;//水平居中
+}

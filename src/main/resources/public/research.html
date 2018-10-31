@@ -37,6 +37,10 @@
 <div class="distance"></div>
 
 <div class="research">
+    <div class="type">
+        <h1>Deep Learning</h1>
+        <div class="distance"></div>
+    </div>
     <ul id="listresearch">
         <li>
             <div class="preImg">
@@ -77,6 +81,53 @@
     </ul>
 
 </div>
+<div class="distance"></div>
+<div class="research">
+    <div class="type"><h1>Evolutionary Computation</h1>
+        <div class="distance"></div>
+    </div>
+    <ul id="listresearch_evl">
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
+
+        </li>
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
+
+        </li>
+        <li>
+            <div class="preImg">
+                <img src="img/slideshow/1.jpg">
+            </div>
+            <div class="rightdis">
+                <h3 >title</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minima nesciunt porro quo quos vel velit. Accusantium aperiam cumque dignissimos earum, enim, esse ipsa mollitia nisi quod reprehenderit saepe soluta!
+                <p class ="more">[more]</p>
+                </p>
+            </div>
+
+        </li>
+    </ul>
+
+
+
+</div>
 
 <!--*****************************************页底****************************************************************-->
 <div class="footpage">
@@ -95,11 +146,26 @@
             async: true,
             dataType: "json",
             success: function (data) {
+
                 console.log("find research success");
                 for (i = 0; i < data.length; i++) {
-                    var ul = $("#listresearch");
-                    ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
-                    "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
+                    if(data[i].abs.length>=270){
+                        data[i].abs = data[i].abs.substring(0,270)+"..."
+                    }
+                    else{
+                        data[i].abs = data[i].abs+"..."
+                    }
+                    if(data[i].type==0){
+                        var ul = $("#listresearch");
+                        ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
+                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
+                    }
+                    else if(data[i].type==1){
+                        var ul = $("#listresearch_evl");
+                        ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
+                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
+                    }
+
                 }
 
 

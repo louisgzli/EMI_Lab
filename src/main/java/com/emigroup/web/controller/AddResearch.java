@@ -4,10 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.emigroup.web.service.ResearhService;
 import com.emigroup.web.vo.Research;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -21,14 +18,16 @@ public class AddResearch {
     ResearhService researhService;
     @ResponseBody
     @RequestMapping(value={"/addresearch"},method=RequestMethod.POST)
-    public String addresearch(@RequestParam("imgfile") MultipartFile file, @RequestParam("title") String title, @RequestParam("abs") String abs,
+    public String addresearch(@RequestParam("imgfile") MultipartFile file, @RequestParam("title") String title,
+                              @RequestParam("type")String type, @RequestParam("abs") String abs,
                         @RequestParam("text") String text,HttpServletRequest request){
         System.out.println("tile: = "+title);
         System.out.println("abs: = "+abs);
         System.out.println("text: = "+text);
+        System.out.println("text: = "+type);
 
 
-        researhService.insert(file,title,abs,text,request);
+        researhService.insert(file,title,abs,type,text,request);
 
         return "success";
     }

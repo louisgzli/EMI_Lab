@@ -1,7 +1,9 @@
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\config\MyWebConfigurer.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\service\CvService.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\service\PaperService.java
+E:\emi\EMI_Lab\src\main\java\com\emigroup\web\vo\Research.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\service\AttachmentServiceImpl.java
+E:\emi\EMI_Lab\src\main\java\com\emigroup\web\dao\ResearchMapper.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\service\NewsService.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\controller\AddPubController.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\WebApplication.java
@@ -9,8 +11,10 @@ E:\emi\EMI_Lab\src\main\java\com\emigroup\web\dao\PaperMapper.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\vo\News.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\controller\AddNewsController.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\controller\FileUploadController.java
+E:\emi\EMI_Lab\src\main\java\com\emigroup\web\service\ResearhService.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\dao\NewsMapper.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\vo\Paper.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\dao\CvMapper.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\vo\Cv.java
+E:\emi\EMI_Lab\src\main\java\com\emigroup\web\controller\AddResearch.java
 E:\emi\EMI_Lab\src\main\java\com\emigroup\web\controller\UploadCvController.java

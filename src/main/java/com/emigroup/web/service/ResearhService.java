@@ -31,7 +31,8 @@ public class ResearhService {
 
 //        String projectRealPath = env.getProperty("upload.path");
         //获取系统路径
-        File resourcefile = new File("src/main/resources/static/");
+//        File resourcefile = new File("src/main/resources/static/");
+        File resourcefile = new File("./emi_resource");
         String projectRealPath = resourcefile.getAbsolutePath();
 
         // get the real path to store received images

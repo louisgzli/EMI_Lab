@@ -19,7 +19,8 @@ public class MyWebConfigurer extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {//文件映射，访问images/的时候映射到
-        File resourcefile = new File("src/main/resources/static");
+//        File resourcefile = new File("src/main/resources/static");
+        File resourcefile = new File("./emi_resource");
         String projectRealPath = resourcefile.getAbsolutePath();
 
         registry.addResourceHandler("/images/**").addResourceLocations("file:" + projectRealPath + "/");

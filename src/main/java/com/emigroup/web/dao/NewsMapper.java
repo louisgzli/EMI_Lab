@@ -7,8 +7,8 @@ import java.util.List;
 
 @Mapper
 public interface NewsMapper {
-    @Insert("INSERT INTO news(title,abs,text) VALUES(#{title}, #{abs},#{text})")
-    int insert(@Param("title") String title, @Param("abs") String abs,
+    @Insert("INSERT INTO news(title,abs,date,text) VALUES(#{title}, #{abs},#{date},#{text})")
+    int insert(@Param("title") String title, @Param("abs") String abs,@Param("date") String date,
                @Param("text") String text);
 
     @Select("SELECT * FROM News")
@@ -23,9 +23,9 @@ public interface NewsMapper {
     int deleteById(int id);
 
     @Update("update news  set title=#{title}," +
-            "abs=#{abs},text=#{text}" +
+            "abs=#{abs},date=#{date},text=#{text}" +
             " where id=#{id}")
-    int update(@Param("id") int id,@Param("title") String title, @Param("abs") String abs,
+    int update(@Param("id") int id,@Param("title") String title, @Param("abs") String abs,@Param("date") String date,
                @Param("text") String text);
 
 

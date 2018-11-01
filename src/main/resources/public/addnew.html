@@ -11,7 +11,7 @@
 
     <script src="ckeditor/ckeditor.js"></script>
     <script src="ckfinder/ckfinder.js"></script>
-
+    <script  src="js/laydate/laydate.js"></script>
 
 </head>
 
@@ -28,12 +28,24 @@
         <label class="control-label">Abstract(摘要)</label>
         <input  class="form-control " type="text" id="abs" name="abs" placeholder="please  type Title">
     </div>
+    <div class="form-group">
+        <label class="control-label">Date</label>
+        <input   class="form-control input-sm time" type="text" id="date" name="date" placeholder="please choose date">
+    </div>
     <textarea name="text" id="editor1" rows="10" cols="80">    This is my textarea to be replaced with CKEditor.           </textarea>
     <script type="text/javascript">
         var editor = CKEDITOR.replace( 'editor1',{
             language: 'zh-cn',
             uiColor: '#c3c8d1',
-            customConfig: '/ckeditor/algoConfig.js' //自定义自己的toobar风格
+            // customConfig: '/ckeditor/algoConfig.js' //自定义自己的toobar风格
+
+            height:700,     //编辑器高度
+
+        removeButtons : 'Source,Save,NewPage,Scayt',
+        image_previewText:'aaa ',     //预览区域显示内容
+        filebrowserImageBrowseUrl : '',
+        filebrowserImageUploadUrl : '/addimage/uploadImage.do',
+
         } );
         CKFinder.setupCKEditor(editor, '/ckfinder/');
 

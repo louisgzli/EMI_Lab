@@ -15,7 +15,7 @@ public class NewsService {
     NewsMapper newsMapper;
 
     public int addNews(News news){
-        return newsMapper.insert(news.getTitle(),news.getAbs(),news.getText());
+        return newsMapper.insert(news.getTitle(),news.getAbs(),news.getDate(),news.getText());
     }
 
     public int deleteById(int  id){
@@ -23,7 +23,7 @@ public class NewsService {
     }
 
     public int update(News news){
-        return newsMapper.update(news.getId(),news.getTitle(),news.getAbs(),news.getText());
+        return newsMapper.update(news.getId(),news.getTitle(),news.getAbs(),news.getDate(),news.getText());
     }
 
     public List<News> findAll(){

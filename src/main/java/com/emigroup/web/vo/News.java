@@ -5,7 +5,15 @@ public class News {
     private String title;
     private String abs;
     private String text;
+    private String date;
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public int getId() {
         return id;

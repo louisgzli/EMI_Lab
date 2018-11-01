@@ -26,7 +26,9 @@ public class AttachmentServiceImpl {
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
         // get project path
-        File resourcefile = new File("src/main/resources/static/");
+//        File resourcefile = new File("src/main/resources/static/");
+        //传到项目所在目录同级目录下
+        File resourcefile = new File("./emi_resource");
         String projectRealPath = resourcefile.getAbsolutePath();
 //        String projectRealPath = env.getProperty("upload.path");
         // get the real path to store received images

@@ -31,6 +31,8 @@ public class AddNewsController {
     public List<News> findAll(){
         return newsService.findAll();
     }
+
+
     @ResponseBody
     @RequestMapping(value={"/findbyid"},method=RequestMethod.POST)
     public News findById(int id){

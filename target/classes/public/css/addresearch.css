@@ -1,8 +1,11 @@
+
+html{overflow-x : hidden ; height : 100% ; margin : 0 ; padding : 0 ; }
+body{ height : 99% ; margin : 0 ;  overflow-x : hidden ; }
 .distance{
     height:50px;
 }
 .research {
-    width: 1000px;
+    width: 52%;
     margin: 0 auto;
 }
 

@@ -1,5 +1,5 @@
 .content{
-    width:1000px;
+    width:52%;
     margin:3px  auto;
     
 
@@ -23,4 +23,9 @@ a{
 }
 .time{
 
+}
+
+.type{
+    margin:0 auto;
+    text-align:center;//水平居中
 }

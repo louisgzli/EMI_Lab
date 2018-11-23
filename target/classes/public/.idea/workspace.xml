@@ -2,58 +2,170 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5433c35-736e-442a-94e1-cb0cfe313926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/com/emigroup/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/emigroup/web/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/com/emigroup/web/controller/AddNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/emigroup/web/controller/AddNewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/com/emigroup/web/dao/NewsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/emigroup/web/dao/NewsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/com/emigroup/web/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/emigroup/web/service/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/com/emigroup/web/vo/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/emigroup/web/vo/News.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/addResearch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/addnew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addnews.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/addresearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/addresearch.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/addresearch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/member.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/publication.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/publication.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emi.html" beforeDir="false" afterPath="$PROJECT_DIR$/emi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/modifyNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/modifyNews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/modifyPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/modifyPaper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/showCv.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showCv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/showNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showNews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/showPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showPaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slideshow/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/modifyCv.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/modifycv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/modifyNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/modifynew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/modifyPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/modifypaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/showCv.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showcv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/showNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/shownews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/showPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showpaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/showResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/showresearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/research.html" beforeDir="false" afterPath="$PROJECT_DIR$/research.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/showResearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/showresearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shownews.html" beforeDir="false" afterPath="$PROJECT_DIR$/shownews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/controller/AddNewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/controller/AddNewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/dao/NewsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/dao/NewsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/service/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/service/NewsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/vo/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/com/emigroup/web/vo/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1538913140049-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540128787632-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540128854029-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540128986931-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540129020411-1539324866105-张玉立 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540129064631-1539326146729-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540263343400-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540263589938-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540263694449-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540286650376-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540293481617-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540293853501-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540567495105-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540567531960-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540567560014-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540567608421-1539324866105-张玉立 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540567651939-1539326146729-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540695060489-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1540999843129-微信图片_20181012155322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541000124390-微信图片_20181012155322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541062689286-微信图片_20181101165612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541063658508-tian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541071920250-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541072689579-QQ图片20181101193931.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541073396545-QQ图片20181101195104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/cvImage/1541073690304-QQ截图20181101195842.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540037655336-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540037996013-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540039241961-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540039292954-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540039565669-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540118139110-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540118914462-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540119736822-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540120007799-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540286641871-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540292067847-微信图片_20181023185405.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540292547883-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540292937088-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540293256994-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540293385978-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540293460767-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540293753756-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540293834309-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1540890665855-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541001502972-微信图片_20181031235520.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541001526624-微信图片_20181031235520.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541071769798-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541071828566-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541071871025-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541072482636-QQ图片20181101193931.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541072668772-QQ图片20181101194406.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541073278135-QQ截图20181101195329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541073295961-QQ截图20181101195338.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541073323866-QQ截图20181101195349.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541073349788-QQ截图20181101195415.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541073626903-QQ截图20181101200011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541087243304-tian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/newsImage/1541096692677-1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/addResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/addResearch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/addnew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/addnews.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/addresearch.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/addresearch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/member.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/css/publication.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/css/publication.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/emi.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/emi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/modifyNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/manage/modifyNews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/modifyPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/manage/modifyPaper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/showCv.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/manage/showCv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/showNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/manage/showNews.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/showPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/manage/showPaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/img/slideshow/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/img/slideshow/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/manage/modifyNews.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/publications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/research.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/research.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/showResearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/showResearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/classes/public/shownews.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/public/shownews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1538913140049-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540128787632-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540128854029-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540128986931-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540129020411-1539324866105-张玉立 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540129064631-1539326146729-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540263343400-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540263589938-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540263694449-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540286650376-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540293481617-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540293853501-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540567495105-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540567531960-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540567560014-1539313771128-图片1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540567608421-1539324866105-张玉立 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540567651939-1539326146729-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540695060489-1539311426324-头像.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1540999843129-微信图片_20181012155322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541000124390-微信图片_20181012155322.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541062689286-微信图片_20181101165612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541063658508-tian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541071920250-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541072689579-QQ图片20181101193931.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541073396545-QQ图片20181101195104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/cvImage/1541073690304-QQ截图20181101195842.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540037655336-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540037996013-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540039241961-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540039292954-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540039565669-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540118139110-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540118914462-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540119736822-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540120007799-IMG_0786.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540286641871-1539313393267-ChengHe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540292067847-微信图片_20181023185405.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540292547883-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540292937088-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540293256994-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540293385978-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540293460767-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540293753756-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540293834309-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1540890665855-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541001502972-微信图片_20181031235520.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541001526624-微信图片_20181031235520.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541071769798-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541071828566-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541071871025-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541072482636-QQ图片20181101193931.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541072668772-QQ图片20181101194406.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541073278135-QQ截图20181101195329.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541073295961-QQ截图20181101195338.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541073323866-QQ截图20181101195349.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541073349788-QQ截图20181101195415.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541073626903-QQ截图20181101200011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541087243304-tian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/static/newsImage/1541096692677-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/emi.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/emi.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/emi.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/emi.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../target/surefire-reports/TEST-com.emigroup.web.WebApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/surefire-reports/TEST-com.emigroup.web.WebApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../target/surefire-reports/com.emigroup.web.WebApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/surefire-reports/com.emigroup.web.WebApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../test/cvImage/1541098223110-1.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,67 +176,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/research.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1064">
-                    <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-                    <folding>
-                      <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-553622847">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="17" />
-          <entry key="html" value="37" />
+          <entry key="css" value="30" />
+          <entry key="html" value="47" />
           <entry key="rnc" value="1" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="17" />
-          <entry key="HTML" value="37" />
+          <entry key="CSS" value="30" />
+          <entry key="HTML" value="47" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="920" />
-          <entry key="html" value="61327" />
+          <entry key="css" value="1076" />
+          <entry key="html" value="61363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="920" />
-          <entry key="HTML" value="61327" />
+          <entry key="CSS" value="1076" />
+          <entry key="HTML" value="61363" />
         </counts>
       </usages-collector>
     </session>
@@ -132,68 +224,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addcv.html">
+        <entry file="file://$PROJECT_DIR$/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+            <state relative-caret-position="304">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/addresearch.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="77" column="1" selection-start-line="77" selection-end-line="77" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2660">
-              <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#h2#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#b#0;n#h2#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/showResearch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shownews.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/css/fontawesome-all.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/news.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="418">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/publications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,22 +263,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/navigation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+            <state relative-caret-position="494">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
+        <entry file="file://$PROJECT_DIR$/css/container.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addResearch.html">
+        <entry file="file://$PROJECT_DIR$/css/contact.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/emi.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#b#0;n#h2#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/body.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/publication.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -236,20 +331,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/contact.css" />
         <option value="$PROJECT_DIR$/addpub.html" />
         <option value="$PROJECT_DIR$/memdetail.html" />
         <option value="$PROJECT_DIR$/showResearch.html" />
-        <option value="$PROJECT_DIR$/css/navigation.css" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/css/home.css" />
         <option value="$PROJECT_DIR$/addnews.html" />
-        <option value="$PROJECT_DIR$/emi.html" />
+        <option value="$PROJECT_DIR$/css/navigation.css" />
+        <option value="$PROJECT_DIR$/member.html" />
         <option value="$PROJECT_DIR$/research.html" />
-        <option value="$PROJECT_DIR$/css/addresearch.css" />
-        <option value="$PROJECT_DIR$/css/news.css" />
         <option value="$PROJECT_DIR$/shownews.html" />
+        <option value="$PROJECT_DIR$/showresearch.html" />
+        <option value="$PROJECT_DIR$/publications.html" />
         <option value="$PROJECT_DIR$/news.html" />
+        <option value="$PROJECT_DIR$/css/news.css" />
+        <option value="$PROJECT_DIR$/css/publication.css" />
+        <option value="$PROJECT_DIR$/css/member.css" />
+        <option value="$PROJECT_DIR$/css/addresearch.css" />
+        <option value="$PROJECT_DIR$/css/contact.css" />
+        <option value="$PROJECT_DIR$/emi.html" />
       </list>
     </option>
   </component>
@@ -273,7 +373,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,6 +400,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,12 +444,16 @@
       <workItem from="1540172324458" duration="6003000" />
       <workItem from="1540258474460" duration="13245000" />
       <workItem from="1540891404742" duration="17238000" />
-      <workItem from="1540992426058" duration="12044000" />
+      <workItem from="1540992426058" duration="13573000" />
+      <workItem from="1541381974131" duration="44000" />
+      <workItem from="1541426258970" duration="6721000" />
+      <workItem from="1541763120914" duration="692000" />
+      <workItem from="1541765238460" duration="1383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78080000" />
+    <option name="totallyTimeSpent" value="88449000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,7 +472,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -416,27 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/memdetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
@@ -455,43 +538,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/addpub.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/member.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addnew.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addnews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/member.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="184" column="6" selection-start-line="175" selection-start-column="4" selection-end-line="184" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/addnews.html" />
     <entry file="file://$PROJECT_DIR$/addcv.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -499,73 +552,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addResearch.html">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addresearch.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/addresearch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="77" column="1" selection-start-line="77" selection-end-line="77" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2660">
-          <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#h2#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#b#0;n#h2#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showResearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/news.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/navigation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shownews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="190">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showresearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/research.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/addresearch.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/member.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fontawesome-all.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/news.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/navigation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/container.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/publication.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/body.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#b#0;n#h2#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

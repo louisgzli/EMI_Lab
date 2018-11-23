@@ -14,6 +14,7 @@ com\emigroup\web\vo\News.class
 com\emigroup\web\WebApplication.class
 com\emigroup\web\dao\PaperMapper.class
 com\emigroup\web\config\MyWebConfigurer.class
+com\emigroup\web\controller\IndexController.class
 com\emigroup\web\service\AttachmentServiceImpl.class
 com\emigroup\web\service\NewsService.class
 com\emigroup\web\dao\CvMapper.class

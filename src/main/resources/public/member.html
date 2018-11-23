@@ -8,32 +8,30 @@
     <link rel="stylesheet" href="css/member.css">
     <script defer src="js/fontawesome-all.js"></script>
     <script defer src="js/fa-v4-shims.js"></script>
+    <link rel="stylesheet" href="css/body.css">
 </head>
 <body>
 
 <!--**************************************头部****************************************************************-->
-<div class="header container">
-    <div class="row">
-        <div class="col-md-1 logo">
-            <!--<img src="img/sustech%20logo2.png">-->
-        </div>
-        <div class="col-md-4">
-            <h1 style="color:white"><b>SUSTech</b></h1>
-            <h3 style="color:white;margin:5px">Evolving Machine Intelligence (EMI) Group</h3>
-        </div>
+<div class="header">
 
-        <div class="center   col-md-7">
-            <ul class="navi">
-                <li ><a href="emi.html">Home</a></li>
-                <li ><a style="color:black" href="member.html">Members</a></li>
-                <li><a href="research.html">Project</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="news.html">News&Info</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
+    <div class="logo">
+        <!--<img src="img/sustech%20logo2.png">-->
     </div>
-
+    <div class="left_title">
+        <h1 class="sustc" style="color:white"><b >SUSTech</b></h1>
+        <h3 style="color:white;margin:5px">Evolving Machine Intelligence (EMI) Group</h3>
+    </div>
+    <div class="center">
+        <ul class="navi">
+            <li ><a  href="emi.html">Home</a></li>
+            <li><a style="color:black" href="member.html">Members</a></li>
+            <li><a href="research.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="news.html">News&Info</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 </div>
 <!--**************************************头部****************************************************************-->
 
@@ -93,7 +91,7 @@
     </div>
 </div>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script>
 
     var initCv = function (data) {
@@ -110,8 +108,8 @@
             var desdiv = $("<div></div>")
             desdiv.append("<h4><a href=\"#\">"+data[i].username+"</a></h4>");
             desdiv.append(" <p>Department of Computer Science and Engineering, SUSTech</p>\n" +
-                "                    <p>10-603,Innovation Park<br>\n" +
-                "                        1008 Xue Yuan Road, Nanshan Block, Shenzhen, China</p>")
+                "                    <p>10-603,&nbsp Innovation Park<br>\n" +
+                "                        1088 Xue Yuan Road, Nanshan District, Shenzhen, Guangdong</p>")
             desdiv.append("<p>Email:"+data[i].email+"</p>")
 
             if(data[i].position==="0"){//facult
@@ -182,6 +180,12 @@
         })
 
 
+
+    })
+</script>
+<script>
+    $(document).on("click", ".sustc", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+        window.location.href="http://www.sustc.edu.cn";
     })
 </script>
 </body>

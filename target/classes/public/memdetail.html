@@ -2,70 +2,40 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>hangge.comm</title>
+    <title>addaward</title>
 
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <style>
-        #container{
-            width:380px;
-            margin:20px auto;
-            padding:15px;
-            background-color:#eee;
-            border-radius: 15px;
-        }
-        /** 新增按钮 **/
-        #addVar{
-            margin:0 0 0 52px;
-            padding:5px;
-            display:inline-block;
-            background-color:#3A9668;
-            color:#f1f1f1;
-            border:1px solid #005;
-            border-radius: 4px;
-        }
-        /** 删除按钮 **/
-        .removeVar{
-            margin:auto;
-            padding:5px;
-            display:inline-block;
-            background-color:#B02109;
-            color:#f1f1f1;
-            border:1px solid #005;
-            border-radius: 4px;
-        }
-
-        #addVar:hover, .removeVar:hover{
-            cursor: pointer;
-        }
-
-        .alignRight{
-            text-align: right;
-        }
-
-        input, textarea{
-            padding:5px;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/memdetail.css">
 
 </head>
 <body>
 <div id="container">
     <form id="myForm" method="post" target="nm_iframe">
         <p>
-            <label for="var1">项目 1: </label>
+            <label for="idnumber">工号/学号:</label>
+            <input type="text" name="idnumber" id="idnumber">
+            <span class="removeVar">删除</span>
+        </p>
+
+        <p>
+            <label class="control-label">Position</label>
+            <select class="form-control" name="position" >
+                <option value="0">Award</option>
+                <option value="1">Professional Activity</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="var1">项目 2: </label>
             <input type="text" name="var1" id="var1">
             <span class="removeVar">删除</span>
         </p>
-        <p>
-            <label for="var2">项目 2: </label>
-            <input type="text" name="var2" id="var2">
-            <span class="removeVar">删除</span>
-        </p>
         <p><span id="addVar">新增一项</span></p>
-        <p class="alignRight"><input type="submit" value="提交"></p>
+        <p><input type="button" id="submitall" class="btn btn-default">提交</input></p>
     </form>
+
     <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
 </div>
 </body>
@@ -89,24 +59,43 @@
             $(this).parent().remove();
             //varCount--;
         });
-        $("form").on("click",".alignRight",function () {
+        $("form").on("click","#submitall",function () {
+            console.log("helloworld")
             var awardArray = new Array();
             $('input[name^="var"]').each(function(){
                 awardArray.push($(this).val());
             });
+            console.log(awardArray)
+            var idnum = $('input[name="idnumber"]');
+            var type = $('input[name="type"]');
             console.log(awardArray);
+            var awards = JSON.stringify(awardArray);
 
-            var awards = new Object();
-            awards["awards"] = awardArray;
+
 
             console.log(awards);
-            $.post("/cv/jsontest",{
-                awards:awards
-            },function () {
-                
-            })
 
+            console.log("post has been exceed")
+            var jsontemp ={
+                type:awards
+            }
+            $.ajax(
+                {
+                    type:"post",
+                    url:"cv/test",
+                    data:jsontemp,
+                    async: true,
+                    dataType:"json",
+                    success: function (data) {
+                        console.log(data);//输出提交的表表单
 
+                        alert("success");
+                    },
+                    error: function (status) {
+                        console.log(status);
+                    }
+                }
+            )
         })
     });
 </script>

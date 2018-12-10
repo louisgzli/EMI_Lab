@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.emigroup.web.service.CvService;
 import com.emigroup.web.vo.Cv;
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.sun.net.httpserver.HttpContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -62,14 +63,24 @@ public class UploadCvController {
     }
 
     @ResponseBody
-    @RequestMapping(value={"/jsontest"},method=RequestMethod.POST, produces = "application/json;charset=UTF-8")
-    public String testJson(@RequestParam(value="awards",required = true)JSONObject awards){
-        System.out.println(awards);
+    @RequestMapping(value={"/test"},method=RequestMethod.POST)
+    public String testJson(HttpServletRequest request){
+        System.out.println("hello");
+        System.out.println(request.getParameter("type"));
 
         return "successful";
 
 
     }
+
+    //    public String testJson(@RequestParam(value="awards",required = true)String[] awards,@RequestParam(value="idnumber")String idnumber,@RequestParam(value="type")String type){
+//        System.out.println("hello");
+//        System.out.println(awards);
+//
+//        return "successful";
+//
+//
+//    }
 
 
 }

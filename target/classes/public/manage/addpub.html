@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Add Publications</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/addpub.css">
-    <link rel="stylesheet" href="css/publication.css">
-    <script  src="js/laydate/laydate.js"></script>
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/addpub.css">
+    <link rel="stylesheet" href="../css/publication.css">
+    <script  src="../js/laydate/laydate.js"></script>
 
 </head>
 <body>
@@ -83,8 +83,8 @@
         elem: '#date' //或 elem: document.getElementById('test')、elem: lay('#test') 等
     });
 </script>
-<script  src="js/fontawesome-all.js" defer></script>
-<script  src="js/fa-v4-shims.js" defer></script>
+<script  src="../js/fontawesome-all.js" defer></script>
+<script  src="../js/fa-v4-shims.js" defer></script>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
@@ -100,7 +100,7 @@
            $.ajax(
                {
                    type:"post",
-                   url:"addpub/addpub",
+                   url:"../addpub/addpub",
                    data:$("#pubinfo").serialize(),
                    async: true,
                    dataType:"json",

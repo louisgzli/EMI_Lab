@@ -44,8 +44,11 @@ public class AdminController {
 
 
 
-        if (username=="emilab1" && password== "emilab1"){
-                System.out.println("password is right");
+        if (username.equals("emilab1") && password.equals("emilab1")){
+
+                System.out.println("loginfo is correct");
+                req.getSession().setAttribute("username",username);
+                req.getSession().setAttribute("password",password);
                 return "redirect:/emi.html";
             }
 

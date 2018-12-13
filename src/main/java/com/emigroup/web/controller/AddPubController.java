@@ -1,5 +1,6 @@
 package com.emigroup.web.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.emigroup.web.service.PaperService;
 import com.emigroup.web.vo.Paper;
 import org.springframework.stereotype.Controller;
@@ -64,6 +65,32 @@ public class AddPubController {
     @RequestMapping(value={"/findbyid"},method=RequestMethod.POST)
     public Paper findById(int id){
         return paperService.findById(id);
+
+    }
+    @ResponseBody
+    @RequestMapping(value={"/findpub"},method=RequestMethod.POST)
+    public JSONObject findPub(){
+        Comparator invertDictOrder = new Comparator<Integer>() {//倒序
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                // TODO Auto-generated method stub
+                if((int)o1<(int)o2)
+                    return 1;
+                    //注意！！返回值必须是一对相反数，否则无效。jdk1.7以后就是这样。
+                    //		else return 0; //无效
+                else return -1;
+            }
+        };
+        JSONObject jsonObject = new JSONObject();
+        ArrayList<Integer>yearList = new ArrayList<Integer>(paperService.findYear());
+        Collections.sort(yearList,invertDictOrder);
+
+        List<Paper> paperList = paperService.findPaper();
+        jsonObject.put("yearList",yearList);
+        jsonObject.put("paperList",paperList);
+        return jsonObject;
+
+
 
     }
     @ResponseBody

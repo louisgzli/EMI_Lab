@@ -13,27 +13,31 @@
 <div id="container">
     <form id="myForm" method="post" target="nm_iframe">
         <p>
-            <label for="idnumber">工号/学号:</label>
-            <input type="text" name="idnumber" id="idnumber">
-            <span class="removeVar">删除</span>
+            <label for="cardid">工号/学号:</label>
+            <input type="text" name="cardid" id="cardid">
+
+        </p>
+        <p>
+            <label for="username" class="control-label">Username</label>
+            <input type="text" name="username" id="username">
         </p>
 
         <p>
-            <label class="control-label">Position</label>
-            <select class="form-control" name="position" >
-                <option value="0">Award</option>
-                <option value="1">Professional Activity</option>
+            <label  class="control-label">type</label>
+            <select class="form-control" name="type" >
+                <option value="0" selected="selected">award</option>
+                <option value="1">professional activities</option>
             </select>
         </p>
 
 
         <p>
-            <label for="var1">项目 2: </label>
+            <label for="var1">项目</label>
             <input type="text" name="var1" id="var1">
             <span class="removeVar">删除</span>
         </p>
         <p><span id="addVar">新增一项</span></p>
-        <p><input type="button" id="submitall" class="btn btn-default">提交</input></p>
+        <p><input type="button" id="submitall" class="btn btn-default">提交</p>
     </form>
 
     <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
@@ -59,35 +63,38 @@
             $(this).parent().remove();
             //varCount--;
         });
-        $("form").on("click","#submitall",function () {
+        $("form").on("click","#submitall",function() {
             console.log("helloworld")
             var awardArray = new Array();
             $('input[name^="var"]').each(function(){
                 awardArray.push($(this).val());
             });
             console.log(awardArray)
-            var idnum = $('input[name="idnumber"]');
-            var type = $('input[name="type"]');
+
+            var type = $('select[name="type"]').val();
+            var username = $('input[name="username"]').val()
+            var cardid = $('input[name="cardid"]').val()
             console.log(awardArray);
+            console.log(type,username,cardid)
             var awards = JSON.stringify(awardArray);
 
 
 
-            console.log(awards);
-
-            console.log("post has been exceed")
-            var jsontemp ={
-                type:awards
+            var jsontemp = {
+                cardid:cardid,
+                username:username,
+                award:awards,
+                type:type,
             }
             $.ajax(
                 {
                     type:"post",
-                    url:"cv/test",
+                    url:"award/addaward",
                     data:jsontemp,
                     async: true,
                     dataType:"json",
                     success: function (data) {
-                        console.log(data);//输出提交的表表单
+
 
                         alert("success");
                     },
@@ -96,6 +103,7 @@
                     }
                 }
             )
+
         })
     });
 </script>

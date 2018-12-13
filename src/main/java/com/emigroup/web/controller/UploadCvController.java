@@ -66,7 +66,7 @@ public class UploadCvController {
     @RequestMapping(value={"/test"},method=RequestMethod.POST)
     public String testJson(HttpServletRequest request){
         System.out.println("hello");
-        System.out.println(request.getParameter("type"));
+        System.out.println(request.getParameter("award"));
 
         return "successful";
 

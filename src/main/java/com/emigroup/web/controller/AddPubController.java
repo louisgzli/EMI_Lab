@@ -23,6 +23,7 @@ public class AddPubController {
     @RequestMapping(value = {"/addpub"}, method = RequestMethod.POST)
     public String addpub(Model model, Paper paper) {
         paperService.addPaper(paper);
+
         System.out.println(paper);
         
 

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d1a3922-def5-45e6-a51a-1a14c883c3f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../target/classes/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/emigroup/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/emigroup/web/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../target/classes/com/emigroup/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../target/classes/com/emigroup/web/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../test/cvImage/1541098223110-1.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -96,7 +92,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -156,15 +152,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544498671823</updated>
-      <workItem from="1544498673091" duration="5352000" />
+      <workItem from="1544498673091" duration="5951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5352000" />
+    <option name="totallyTimeSpent" value="5951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />

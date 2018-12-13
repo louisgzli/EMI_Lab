@@ -58,61 +58,41 @@
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 
 <script>
+    function createYear(yearlist){
+        data =yearlist
+        console.log(" findyear success");
+        console.log(data);
+        for(i=0;i<data.length;i++){
+            var div = $("#content");
+            div.append("<ul id="+data[i]+"></ul>")
+
+        }
+    }
+    function addpub(paperlist){
+        data = paperlist
+        console.log(" findpaper success");
+        console.log(data);
+
+        $("div.content ul").each(function(index,item){//为每个ul下面添加年份
+            var id = $(item).attr("id");
+            $(item).append("<h3>"+id+"</h3>")
+
+        })
+        for(i=0;i<data.length;i++){
+            var year=data[i].date.substring(0,4);
+
+
+            $("#"+year).append( "<li><span class=\"author\">"+data[i].author+".&nbsp</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">.&nbsp"+data[i].journal+"</span><span class=\"time\">,&nbsp"+year+"</span></li>")
+
+
+
+        }
+    }
     $(function () {
-        $.ajax(
-            {
-                type:"post",
-                url:"addpub/findyear",
-                async: true,
-                dataType:"json",
-                success: function (data) {
-                    console.log("find year success",data.yearList);
-                    for(i=0;i<data.length;i++){
-                        var div = $("#content");
-                        div.append("<ul id="+data[i]+"></ul>")
-
-                    }
-                },
-                error: function (data) {
-                    alert("error,please try again");
-
-
-
-                }
-            }
-
-
-        )
-        $.ajax(
-            {
-
-                type:"post",
-                url:"addpub/findpaper",
-                async: true,
-                dataType:"json",
-                success: function (data) {
-                    console.log(" findpaper success");
-                    $("div.content ul").each(function(index,item){//为每个ul下面添加年份
-                        var id = $(item).attr("id");
-                        $(item).append("<h3>"+id+"</h3>")
-
-                    })
-                    for(i=0;i<data.length;i++){
-                        var year=data[i].date.substring(0,4);
-
-
-                        $("#"+year).append( "<li><span class=\"author\">"+data[i].author+".&nbsp</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">.&nbsp"+data[i].journal+"</span><span class=\"time\">,&nbsp"+year+"</span></li>")
-
-
-
-                    }
-
-                },
-                error: function (data) {
-                    alert("error,please try again");
-                }
-            }
-        )
+        $.post("addpub/findpub",function (data) {
+            createYear(data.yearList);
+            addpub(data.paperList);
+        })
     })
 
 

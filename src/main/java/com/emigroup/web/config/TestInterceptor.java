@@ -15,7 +15,7 @@ public class TestInterceptor extends HandlerInterceptorAdapter {
                              HttpServletResponse response, Object handler) throws Exception {
         HttpSession session = request.getSession(true);
         System.out.println("拦截 warning");
-        System.out.println(session.getAttribute("username").equals(username));
+//        System.out.println(session.getAttribute("username").equals(username));
         //判断用户ID是否存在，不存在就跳转到登录界面
         System.out.println(session.getAttribute("username"));
         if(session.getAttribute("username") == null){

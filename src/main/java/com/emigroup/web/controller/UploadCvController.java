@@ -36,7 +36,6 @@ public class UploadCvController {
     return "success";
     }
 
-
     @ResponseBody
     @RequestMapping(value={"/getcv"},method=RequestMethod.POST)
     public List<Cv> getcv(){
@@ -49,12 +48,14 @@ public class UploadCvController {
         System.out.println(cvService.findById(id).getImgPath());
         return cvService.findById(id);
     }
+
     @ResponseBody
     @RequestMapping(value={"/updatecv"},method=RequestMethod.POST)
     public String updateNews(Cv cv){
         cvService.update(cv);
         return "success";
     }
+
     @ResponseBody
     @RequestMapping(value={"/deletecv"},method=RequestMethod.POST)
     public String deleteById(int id){
@@ -69,8 +70,6 @@ public class UploadCvController {
         System.out.println(request.getParameter("award"));
 
         return "successful";
-
-
     }
 
     //    public String testJson(@RequestParam(value="awards",required = true)String[] awards,@RequestParam(value="idnumber")String idnumber,@RequestParam(value="type")String type){

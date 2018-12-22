@@ -26,6 +26,7 @@ public class ResearhService {
 
 
         String originalName = file.getOriginalFilename();
+        originalName = originalName.replace(" ","");
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
 
@@ -61,10 +62,12 @@ public class ResearhService {
 
         return imageContextPath;
     }
-    public String insert(MultipartFile file,String title,String abs,String type,String text,HttpServletRequest request){
+    public String insert(MultipartFile file,String title,String abs,String type,String text,String cardid,MultipartFile code,MultipartFile pdf,HttpServletRequest request){
 
         String preImage = getFilePath(file,request);
-        researchMapper.insert(title,abs,type,preImage,text);
+        String codepath = getFilePath(code,request);
+        String pdfpath = getFilePath(pdf,request);
+        researchMapper.insert(title,abs,type,preImage,text,cardid,codepath,pdfpath);
         return "success";
     }
 
@@ -74,7 +77,7 @@ public class ResearhService {
     }
 
     public int update(Research research){
-        return researchMapper.update(research.getId(),research.getTitle(),research.getAbs(),research.getType(),research.getPreImage(),research.getText());
+        return researchMapper.update(research.getId(),research.getTitle(),research.getAbs(),research.getType(),research.getPreImage(),research.getText(),research.getCardid(),research.getCodePath(),research.getPdfPath());
     }
     public Research findById(int id){
         return researchMapper.findById( id);

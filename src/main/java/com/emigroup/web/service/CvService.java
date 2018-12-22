@@ -27,6 +27,7 @@ public class CvService {
 
 
         String originalName = file.getOriginalFilename();
+        originalName = originalName.replace(" ","");
         // generate file name
         String localFileName = System.currentTimeMillis() + "-" + originalName;
 
@@ -63,10 +64,10 @@ public class CvService {
         return imageContextPath;
     }
 
-    public String insert(MultipartFile file,String name,String position,String userdes,String email,String interest,String office,String award,HttpServletRequest request){
+    public String insert(MultipartFile file,String name,String position,String userdes,String email,String interest,String office,String award,String cardid,HttpServletRequest request){
 
         String imgpath = getFilePath(file,request);
-        cvMapper.insert(name,position,userdes,imgpath,email,interest,office,award);
+        cvMapper.insert(name,position,userdes,imgpath,email,interest,office,award,cardid);
         return "success";
     }
 
@@ -84,7 +85,7 @@ public class CvService {
 
 
     public int update(Cv cv){
-        return cvMapper.update(cv.getId(), cv.getUsername(),cv.getPosition(),cv.getUserdes(),cv.getImgPath(),cv.getEmail(),cv.getInterest(),cv.getOffice(),cv.getAward());
+        return cvMapper.update(cv.getId(), cv.getUsername(),cv.getPosition(),cv.getUserdes(),cv.getImgPath(),cv.getEmail(),cv.getInterest(),cv.getOffice(),cv.getAward(),cv.getCardid());
 
     }
 }

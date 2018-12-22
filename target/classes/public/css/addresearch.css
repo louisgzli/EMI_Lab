@@ -64,12 +64,12 @@ body{ height : 99% ; margin : 0 ;  overflow-x : hidden ; }
     font-weight: bold;
     margin: 0;
 }
-.more{
+.more, .code, .pdf{
     display: inline-block;
-    color: blue;
+    color: #2669cb;
 
 }
-.more:hover{
+.more:hover, .code:hover, .pdf:hover{
     cursor:pointer;
 }
 .type{

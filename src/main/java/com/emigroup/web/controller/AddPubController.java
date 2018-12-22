@@ -7,9 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 @Controller
@@ -21,16 +24,23 @@ public class AddPubController {
 
     @ResponseBody
     @RequestMapping(value = {"/addpub"}, method = RequestMethod.POST)
-    public String addpub(Model model, Paper paper) {
-        paperService.addPaper(paper);
+    public String addpub(@RequestParam("title")String title, @RequestParam("author")String author, @RequestParam("journal")String journal,
+                         @RequestParam("date")String date, @RequestParam("place")String place, @RequestParam("type")String type,
+                         @RequestParam("cardid")String cardid, @RequestParam("code") MultipartFile code, @RequestParam("pdf")MultipartFile pdf, HttpServletRequest request){
 
-        System.out.println(paper);
-        
-
-        return "{\"hello\":true}";
-
-
+      paperService.insert(title,author,journal,date,place,type,cardid,code,pdf,request);
+      return "success";
     }
+//    public String addpub(Model model, Paper paper) {
+//        paperService.addPaper(paper);
+//
+//        System.out.println(paper);
+//
+//
+//        return "{\"hello\":true}";
+//
+//
+//    }
 
     @ResponseBody
     @RequestMapping(value={"/findyear"},method=RequestMethod.POST)
@@ -127,7 +137,7 @@ public class AddPubController {
     }
     @ResponseBody
     @RequestMapping(value={"/updatepaper"},method=RequestMethod.POST)
-    public String updateNews(Paper paper){
+    public String updatePaper(Paper paper){
         paperService.update(paper);
         return "success";
 

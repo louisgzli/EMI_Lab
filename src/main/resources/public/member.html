@@ -106,7 +106,7 @@
             imgdiv.append(img)
 
             var desdiv = $("<div></div>")
-            desdiv.append("<h4><a href=\"#\">"+data[i].username+"</a></h4>");
+            desdiv.append("<h4><a id ="+data[i].id+" class=\'getdetail\'>"+data[i].username+"</a></h4>");
             desdiv.append(" <p>Department of Computer Science and Engineering, SUSTech</p>\n" +
                 "                    <p>10-603,&nbsp Innovation Park<br>\n" +
                 "                        1088 Xue Yuan Road, Nanshan District, Shenzhen, Guangdong</p>")
@@ -181,6 +181,14 @@
 
 
 
+    })
+</script>
+
+<script>
+    $(document).on("click", ".getdetail", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        window.location.href="showmember.html?id="+id;  // 地址会改变参数也会被传递但是不会打开新窗口
     })
 </script>
 <script>

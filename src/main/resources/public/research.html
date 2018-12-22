@@ -83,16 +83,37 @@
                         data[i].abs = data[i].abs.substring(0,270)+"..."
                     }
                     if(data[i].type==0){
+
                         var ul = $("#listresearch");
                         ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
-                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
+                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p>" +
+                            "</div></li>")
+
+                        if(data[i].codePath!=null){
+                            var rightdis = $(".rightdis[id="+data[i].id+"]");
+                            rightdis.append("<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
+                        }
+                        if(data[i].pdfPath!=null){
+                            var rightdis = $(".rightdis[id="+data[i].id+"]");
+                            rightdis.append("<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
+                        }
+
                     }
                     else if(data[i].type==1){
                         var ul = $("#listresearch_evl");
                         ul.append("<li><div id="+data[i].id+" class=\"preImg\"><img id="+data[i].id+" src="+data[i].preImage+"></div>"+
-                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p></div></li>")
-                    }
+                            "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p>" +
+                            "</div></li>")
+                        if(data[i].codePath!=null){
+                            var rightdis = $(".rightdis[id="+data[i].id+"]");
+                            rightdis.append("<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
+                        }
+                        if(data[i].pdfPath!=null){
+                            var rightdis = $(".rightdis[id="+data[i].id+"]");
+                            rightdis.append("<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
+                        }
 
+                    }
                 }
 
 
@@ -111,6 +132,19 @@
         var id = $(this).attr("id")
         window.location.href = "showresearch.html?id=" + id;  // 地址会改变参数也会被传递但是不会打开新窗口
     })
+    $(document).on("click", ".code", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        console.log(id)
+        window.location=id;
+    })
+    $(document).on("click", ".pdf", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        window.location=id;
+
+
+    });
 </script>
 <script>
     $(document).on("click", ".sustc", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行

@@ -82,9 +82,16 @@
             var year=data[i].date.substring(0,4);
 
 
-            $("#"+year).append( "<li><span class=\"author\">"+data[i].author+".&nbsp</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">.&nbsp"+data[i].journal+"</span><span class=\"time\">,&nbsp"+year+"</span></li>")
+            $("#"+year).append( "<li id="+data[i].id+"><span class=\"author\">"+data[i].author+".&nbsp</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">.&nbsp"+data[i].journal+"</span><span class=\"time\">,&nbsp"+year+"</span></li>")
 
-
+            if(data[i].codePath!=null){
+                var li = $("li[id="+data[i].id+"]");
+                li.append("<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
+            }
+            if(data[i].pdfPath!=null){
+                var li = $("li[id="+data[i].id+"]");
+                li.append("<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
+            }
 
         }
     }
@@ -96,6 +103,21 @@
     })
 
 
+</script>
+<script>
+    $(document).on("click", ".code", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        console.log(id)
+        window.location=id;
+    })
+    $(document).on("click", ".pdf", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行
+
+        var id = $(this).attr("id")
+        window.location=id;
+
+
+    });
 </script>
 <script>
     $(document).on("click", ".sustc", function () {//事件绑定，append 添加的事件不会再刷新事件绑定，js在所有dom加载完之后才执行

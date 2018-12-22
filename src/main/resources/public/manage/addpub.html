@@ -15,7 +15,11 @@
 
 
 
-<form id="pubinfo" role="form">
+<form id="pubinfo" method="post" action="../addpub/addpub" role="form" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="control-label">CardId(please use comma to seperate different people)</label>
+        <input class="form-control " type="text" id="cardid" name="cardid" placeholder="please type CardId">
+    </div>
     <div class="form-group">
         <label class="control-label">Author(please use comma to seperate different people)</label>
         <input class="form-control " type="text" id="author" name="author" placeholder="please type author">
@@ -40,7 +44,14 @@
         <label class="control-label">Place</label>
         <input   class="form-control input-sm " type="text" id="place" name="place" placeholder="please type in place ">
     </div>
-    <input id="submitId" type="submit" class="btn btn-danger" value="send"></input>
+
+    <label class="control-label">Code</label>
+    <input id="code" type="file" name="code">
+
+    <label class="control-label">Pdf</label>
+    <input id="pdf" type="file" name="pdf">
+
+    <input id="submitId" type="submit" class="btn btn-danger" value="send">
     <input id="previewId"  type="button" class="btn btn-success" onclick="showPre()" value="preview"></input>
 </form>
 
@@ -94,38 +105,39 @@
 </html>
 
 <script>
-   $(document).ready(function () {
-       $("#submitId").click(function () {
+   // $(document).ready(function () {
+       //     $("#submitId").click(function () {
+       //
+       //         $.ajax(
+       //             {
+       //                 type:"post",
+       //                 url:"../addpub/addpub",
+       //                 data:$("#pubinfo").serialize(),
+       //                 async: true,
+       //                 dataType:"json",
+       //                 success: function (data) {
+       //                     console.log(data);//输出提交的表表单
+       //
+       //                     alert("success");
+       //                 },
+       //                 error: function (status) {
+       //                     console.log(status);
+       //                 }
+       //             }
+       //         )
+       //
+       //     })
+       // })
+       //
+       function showPre() {
+           var ul = $("#preview-list");
 
-           $.ajax(
-               {
-                   type:"post",
-                   url:"../addpub/addpub",
-                   data:$("#pubinfo").serialize(),
-                   async: true,
-                   dataType:"json",
-                   success: function (data) {
-                       console.log(data);//输出提交的表表单
+           ul.append("<li>" + "<span class='author'>" + $("#pubinfo input[name=author]").val() + "</span>" +
+               "<span class='title'>" + $("#pubinfo input[name=title]").val() + "</span>" +
+               "<span class='journal'>" + $("#pubinfo input[name=journal]").val() + "</span>" +
+               "<span >" + $("#pubinfo input[name=date]").val() + "</span>" +
+               "<span >" + $("#pubinfo input[name=place]").val() + "</span>" + "</li>")
 
-                       alert("success");
-                   },
-                   error: function (status) {
-                       console.log(status);
-                   }
-               }
-           )
+       }
 
-       })
-   })
-    
-    function  showPre() {
-        var ul = $("#preview-list");
-
-        ul.append("<li>"+"<span class='author'>"+$("#pubinfo input[name=author]").val()+"</span>"+
-            "<span class='title'>"+$("#pubinfo input[name=title]").val()+"</span>"+
-            "<span class='journal'>"+$("#pubinfo input[name=journal]").val()+"</span>"+
-            "<span >"+$("#pubinfo input[name=date]").val()+"</span>"+
-            "<span >"+$("#pubinfo input[name=place]").val()+"</span>"+"</li>")
-
-    }
 </script>

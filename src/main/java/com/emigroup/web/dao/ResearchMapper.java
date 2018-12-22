@@ -6,9 +6,9 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 @Mapper
 public interface ResearchMapper {
-    @Insert("INSERT INTO research(title,abs,type,preImage,text) VALUES(#{title}, #{abs},#{type},#{preImage},#{text})")
+    @Insert("INSERT INTO research(title,abs,type,preImage,text,cardid,codepath,pdfpath) VALUES(#{title}, #{abs},#{type},#{preImage},#{text},#{cardid},#{codepath},#{pdfpath})")
     int insert(@Param("title") String title, @Param("abs") String abs,@Param("type") String type,@Param("preImage")String preImage,
-               @Param("text") String text);
+               @Param("text") String text,@Param("cardid")String cardid,@Param("codepath")String codepath,@Param("pdfpath")String pdfpath);
 
     @Select("SELECT * FROM research")
     List<Research> findAll();
@@ -20,9 +20,9 @@ public interface ResearchMapper {
     int deleteById(int id);
 
     @Update("update research  set title=#{title}," +
-            "abs=#{abs},type=#{type},preImage=#{preImage},text=#{text}" +
+            "abs=#{abs},type=#{type},preImage=#{preImage},text=#{text},cardid=#{cardid},codepath=#{codepath},pdfpath={pdfpath}" +
             " where id=#{id}")
     int update(@Param("id") int id,@Param("title") String title, @Param("abs") String abs,@Param("type") String type,@Param("preImage") String preImage,
-               @Param("text") String text);
+               @Param("text") String text,@Param("cardid")String cardid,@Param("codepath")String codepath,@Param("pdfpath")String pdfpath);
 
 }

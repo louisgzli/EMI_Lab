@@ -46,7 +46,7 @@ public class AddNewsController {
         };
         List<News> newsList = newsService.findAll();
         Collections.sort(newsList,invertDictOrderForNews);
-
+        
         return newsList;
     }
 

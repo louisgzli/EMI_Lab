@@ -20,14 +20,14 @@ public class AddResearch {
     @RequestMapping(value={"/addresearch"},method=RequestMethod.POST)
     public String addresearch(@RequestParam("imgfile") MultipartFile file, @RequestParam("title") String title,
                               @RequestParam("type")String type, @RequestParam("abs") String abs,
-                        @RequestParam("text") String text,HttpServletRequest request){
+                        @RequestParam("text") String text,@RequestParam("cardid")String cardid,@RequestParam("code")MultipartFile code,@RequestParam("pdf")MultipartFile pdf,HttpServletRequest request){
         System.out.println("tile: = "+title);
         System.out.println("abs: = "+abs);
         System.out.println("text: = "+text);
         System.out.println("text: = "+type);
 
 
-        researhService.insert(file,title,abs,type,text,request);
+        researhService.insert(file,title,abs,type,text,cardid,code,pdf,request);
 
         return "success";
     }

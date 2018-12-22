@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Cv {
     private int id;
+    private String cardid;
+
+
     private String username;
     private String position;
     private String imgpath;
@@ -39,6 +42,14 @@ public class Cv {
         this.id = id;
     }
 
+
+    public String getCardid() {
+        return cardid;
+    }
+
+    public void setCardid(String cardid) {
+        this.cardid = cardid;
+    }
 
 
     public String getPosition() {

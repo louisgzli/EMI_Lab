@@ -84,13 +84,13 @@
 
             $("#"+year).append( "<li id="+data[i].id+"><span class=\"author\">"+data[i].author+".&nbsp</span> <span class=\"title\">"+data[i].title+"</span><span class=\"journal\">.&nbsp"+data[i].journal+"</span><span class=\"time\">,&nbsp"+year+"</span></li>")
 
-            if(data[i].codePath!=null){
+            if(data[i].codePath!=null&&data[i].codePath!=""){
                 var li = $("li[id="+data[i].id+"]");
-                li.append("<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
+                li.append("&nbsp<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
             }
-            if(data[i].pdfPath!=null){
+            if(data[i].pdfPath!=null&&data[i].pdfPath!=""){
                 var li = $("li[id="+data[i].id+"]");
-                li.append("<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
+                li.append("&nbsp<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
             }
 
         }

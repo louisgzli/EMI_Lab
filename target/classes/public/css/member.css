@@ -4,6 +4,9 @@
     overflow: hidden;
 
 }
+.full a{
+    cursor:pointer;
+}
 .full h3{
     color: #2077a8;
 }

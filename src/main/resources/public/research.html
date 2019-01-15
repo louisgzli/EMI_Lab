@@ -89,11 +89,11 @@
                             "<div class=\"rightdis\" id="+data[i].id+"><h3>"+data[i].title+"</h3>"+data[i].abs+" <p id="+data[i].id+" class=\'more\'><a>[more]</a></p>" +
                             "</div></li>")
 
-                        if(data[i].codePath!=null){
+                        if(data[i].codePath!=null&&data[i].codePath!=""){
                             var rightdis = $(".rightdis[id="+data[i].id+"]");
                             rightdis.append("<p id = "+data[i].codePath+" class=\'code\'><a>[code]</a></p>")
                         }
-                        if(data[i].pdfPath!=null){
+                        if(data[i].pdfPath!=null&&data[i].pdfPath!=""){
                             var rightdis = $(".rightdis[id="+data[i].id+"]");
                             rightdis.append("<p id = "+data[i].pdfPath+ " class=\'pdf\'><a>[pdf]</a></p>")
                         }

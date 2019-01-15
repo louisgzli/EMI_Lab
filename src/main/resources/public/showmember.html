@@ -44,7 +44,7 @@
 
     <div class ="imgandbasic">
         <div class ="img">
-            <img >
+
         </div>
         <div class ="basic">
 
@@ -55,10 +55,7 @@
     <div class="bio">
         <h3>Biography</h3>
         <hr>
-        <p id ="bioinfo">I recievend my Ph.D. degree in Computer Science from the University of Surrey in 2016, financed by the Honda Research Institute Europe (HRI-EU).
-            My principal supervisor at the University of Surrey was Prof. Yaochu Jin, and my co-supervisor at the HRI-EU was Prof. Markus Olhofer.
-            I am now working as a Research Fellow with the CERCIA Group at the University of Birmingham, directed by Prof. Xin Yao.<br><br>
-
+        <p id ="bioinfo">
           </p>
     </div>
 
@@ -73,15 +70,17 @@
     <div class = "profac">
         <h3>Professional Activities</h3>
         <hr>
-        <li><span style="color:blue;">IEEE MBEA'2018</span>: Co-Chair,2018 IEEE Symposium on Model-Based Evolutionary Algorithms, Bengaluru, India</li>
+    </div>
 
 
-
+    <div class = "invtal">
+        <h3>Invited Talks</h3>
+        <hr>
     </div>
     <div class = "award">
         <h3>Awards</h3>
         <hr>
-        <li><span style="color:blue;">IEEE MBEA'2018</span>: Co-Chair,2018 IEEE Symposium on Model-Based Evolutionary Algorithms, Bengaluru, India</li>
+
 
 
 
@@ -92,7 +91,6 @@
         <h3>Publications</h3>
         <hr>
 
-        <li><span style="color:blue;">IEEE MBEA'2018</span>: Co-Chair,2018 IEEE Symposium on Model-Based Evolutionary Algorithms, Bengaluru, India</li>
 
 
     </div>
@@ -136,20 +134,23 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script>
     function adduser(user) {
-        var img_area = $(".imgandbasic .img img");
-        img_area.attr(src,user.imgPath);
+        var img_area = $(".imgandbasic .img");
+        img_area.append("<img src="+user.imgPath+">");
+            ""
         var basic_area = $(".imgandbasic .basic");
         basic_area.append("<h4>"+user.username+"</h4>")
         basic_area.append(" <p>Department of Computer Science and Engineering, SUSTech</p>\n" +
             "                    <p>10-603,&nbsp Innovation Park<br>\n" +
             "                        1088 Xue Yuan Road, Nanshan District, Shenzhen, Guangdong</p>")
-        basic_area.append("<p>Email:"+user[i].email+"</p>")
+        basic_area.append("<p>Email:"+user.email+"</p>")
 
         var bio_area  = $(".bio")
         bio_area.append("<p>"+user.userdes+"</p>");
 
-        var interest_area = $(".profac");
-        interest_area.append("<li"+user.interest+"></li>")
+        var interest_area = $(".researchinterest");
+        console.log("user interest",user.interest)
+        interest_area.append("<p>"+user.interest+"</p>")
+
 
 
 
@@ -170,9 +171,16 @@
             profac.append("<li>"+activitylist[i]+"</li>")
         }
     }
+    function  addinvtal(invtallist) {
+        var invtal = $(".invtal");
+        for(var i = 0;i<invtallist.length;i++){
+            invtal.append("<li>"+invtallist[i]+"</li>")
+        }
+        
+    }
     function addaward(awardlist) {
         var award = $(".award")
-        for (var i = 0;i<awardlist.size();i++){
+        for (var i = 0;i<awardlist.length;i++){
             award.append("<li>"+awardlist[i]+"</li>")
         }
 
@@ -207,8 +215,10 @@
         var paperlist = data.paperlist;
         var awardlist = data.awardlist;
         var activitylist=data.activitylist;
+        var invtallist = data.invtallist;
         adduser(user);
         addactivity(activitylist);
+        addinvtal(invtallist);
         addpaper(paperlist);
         addaward(awardlist);
 

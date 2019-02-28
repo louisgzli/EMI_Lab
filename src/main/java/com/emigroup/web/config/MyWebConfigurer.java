@@ -3,6 +3,7 @@ package com.emigroup.web.config;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.env.Environment;
@@ -15,6 +16,8 @@ import java.io.File;
 public class MyWebConfigurer extends WebMvcConfigurerAdapter {
     @Autowired
     private Environment env;
+
+
 
 
 
@@ -39,7 +42,11 @@ public class MyWebConfigurer extends WebMvcConfigurerAdapter {
         //拦截规则：除了index，其他都拦截判断
         // addPathPatterns 用于添加拦截规则
         // excludePathPatterns 用户排除拦截
-        registry.addInterceptor(new TestInterceptor()).addPathPatterns("/*/add*","/*/update*","/*/delete*");
+//        registry.addInterceptor(new TestInterceptor()).addPathPatterns("/*/add*","/*/update*","/*/delete*");
+        registry.addInterceptor(new TestInterceptor()).addPathPatterns("/manage/**");
+        registry.addInterceptor(new TestInterceptor()).addPathPatterns("/.idea/**");
+
+
     }
 
 

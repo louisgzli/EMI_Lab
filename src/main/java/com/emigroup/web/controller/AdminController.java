@@ -24,6 +24,7 @@ public class AdminController {
     public String login() {
         return "login";
     }
+
     @RequestMapping("/logininfo")
     public String login(HttpServletRequest req, HttpServletResponse res,
                         RedirectAttributes attr) {
@@ -35,12 +36,6 @@ public class AdminController {
 
         System.out.println(username.equals("emilab1"));
         System.out.println(password.equals("emilab1"));
-
-
-
-
-
-
 
         if (username.equals("emilab1") && password.equals("emilab1")){
 
@@ -57,6 +52,59 @@ public class AdminController {
 
            return "redirect:/emi.html";
     }
+
+    @RequestMapping("/manage/showcv")
+    public String showCv(){
+        return "/manage/showcv";
+    }
+    @RequestMapping("/manage/showpaper")
+    public String showPaper(){
+        return "/manage/showpaper";
+    }
+    @RequestMapping("/manage/showresearch")
+    public String showResearch(){
+        return "/manage/showresearch";
+    }
+    @RequestMapping("/manage/shownew")
+    public String showNews(){
+        return "/manage/shownew";
+    }
+
+
+    @RequestMapping("/manage/addcv")
+    public String addCv(){
+        return "/manage/addcv";
+    }
+    @RequestMapping("/manage/addnew")
+    public String addNew(){
+        return "/manage/addnew";
+    }
+    @RequestMapping("/manage/addpub")
+    public String addPub(){
+        return "/manage/addpub";
+    }
+    @RequestMapping("/manage/addresearch")
+    public String addResearch(){
+        return "/manage/addresearch";
+    }
+
+    @RequestMapping("/manage/modifycv")
+    public String modifyCv(){
+        return "/manage/modifyCv";
+    }
+    @RequestMapping("/manage/modifynew")
+    public String modifyNew(){
+        return "/manage/modifynew";
+    }
+    @RequestMapping("/manage/modifypaper")
+    public String modifyPaper(){
+        return "/manage/modifypaper";
+    }
+    @RequestMapping("/.idea/**")
+    public String workspace(){
+        return "stop now!";
+    }
+
 
 
 }
